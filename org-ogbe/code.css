@@ -1,0 +1,342 @@
+.org-bold-italic {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.org-cursor {
+	background-color: #c9c1b9;
+}
+
+.org-error {
+	color: red;
+	font-weight: 700;
+}
+
+.org-escape-glyph {
+	color: #a52a2a;
+}
+
+.org-fringe {
+	color: #7d7d7d;
+	background-color: #dfd6cd;
+}
+
+.org-glyphless-char {
+	font-size: 60%;
+}
+
+.org-header-line {
+	color: #333;
+	background-color: #e5e5e5;
+	font-weight: 700;
+}
+
+.org-highlight {
+	color: #707070;
+	background-color: #c9c1b9;
+}
+
+.org-holiday {
+	background-color: #ffc0cb;
+}
+
+.org-isearch-fail {
+	background-color: #ffc1c1;
+}
+
+.org-lazy-highlight {
+	color: #646464;
+	background-color: #c9c1b9;
+}
+
+.org-link-visited {
+	color: #8b008b;
+	text-decoration: underline;
+}
+
+.org-mode-line-emphasis {
+	color: #585858;
+}
+
+.org-mode-line-inactive {
+	color: #43757c;
+	background-color: #f5ebe1;
+}
+
+.org-nobreak-space {
+	color: #a52a2a;
+	text-decoration: underline;
+}
+
+.org-org-agenda-date-today {
+	color: #707070;
+	background-color: #c9c1b9;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.org-org-agenda-restriction-lock {
+	background-color: #EEE;
+}
+
+.org-org-code {
+	color: #646464;
+}
+
+.org-org-column-title {
+	background-color: #e5e5e5;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.org-org-date {
+	color: #476238;
+	text-decoration: underline;
+}
+
+.org-org-document-info {
+	color: #191970;
+}
+
+.org-org-document-title {
+	color: #191970;
+	font-weight: 700;
+}
+
+.org-org-footnote {
+	color: #7d7d7d;
+	text-decoration: underline;
+}
+
+.org-org-headline-done {
+	color: #bc8f8f;
+}
+
+.org-org-level-1 {
+	color: #646464;
+	font-size: 110%;
+	font-weight: 700;
+}
+
+.org-org-level-3 {
+	color: #7d7d7d;
+	font-weight: 700;
+}
+
+.org-org-link {
+	color: #8c4a79;
+	text-decoration: underline;
+}
+
+.org-org-mode-line-clock-overrun {
+	color: #7d7d7d;
+	background-color: red;
+	font-weight: 700;
+}
+
+.org-org-scheduled-today {
+	color: #bd745e;
+	font-size: 120%;
+	font-weight: 700;
+}
+
+.org-org-warning {
+	color: #ff1276;
+	text-decoration: underline;
+}
+
+.org-show-paren-match {
+	background-color: #40e0d0;
+}
+
+.org-show-paren-mismatch {
+	color: #FFF;
+	background-color: #a020f0;
+}
+
+.org-success {
+	color: #228b22;
+	font-weight: 700;
+}
+
+.org-tool-bar {
+	color: #000;
+	background-color: #bfbfbf;
+}
+
+.org-tooltip {
+	color: #000;
+	background-color: #ffffe0;
+}
+
+.org-trailing-whitespace {
+	background-color: #ff1276;
+}
+
+.org-tty-menu-disabled {
+	color: #d3d3d3;
+	background-color: #00F;
+}
+
+.org-tty-menu-enabled {
+	color: #FF0;
+	background-color: #00F;
+	font-weight: 700;
+}
+
+.org-tty-menu-selected {
+	background-color: red;
+}
+
+.org-warning {
+	color: #ff1276;
+}
+
+.org-warning-1 {
+	color: #ff1276;
+	background-color: #dfd6cd;
+}
+
+.org-window-divider {
+	color: #999;
+}
+
+.org-window-divider-first-pixel {
+	color: #CCC;
+}
+
+.org-window-divider-last-pixel {
+	color: #666;
+}
+
+.org-bold,.org-buffer-menu-buffer,.org-comint-highlight-input,.org-completions-first-difference,.org-org-checkbox,.org-org-list-dt,.org-org-tag,.org-org-tag-group,.org-regexp-grouping-backslash,.org-regexp-grouping-construct {
+	font-weight: 700;
+}
+
+.org-builtin,.org-org-ellipsis,.org-org-level-7,.org-outline-7,.org-preprocessor {
+	color: #1a8591;
+}
+
+.org-button,.org-link {
+	color: #697024;
+	text-decoration: underline;
+}
+
+.org-calendar-month-header,.org-function-name,.org-mode-line-buffer-id,.org-outline-1 {
+	color: #bd745e;
+	font-weight: 700;
+}
+
+.org-calendar-today,.org-org-target,.org-underline {
+	text-decoration: underline;
+}
+
+.org-calendar-weekday-header,.org-constant,.org-negation-char,.org-org-level-6,.org-outline-6 {
+	color: #697024;
+}
+
+.org-calendar-weekend-header,.org-comment,.org-comment-delimiter,.org-doc,.org-org-block-begin-line,.org-org-block-end-line,.org-org-meta-line,.org-outline-4 {
+	color: #a9a9a9;
+}
+
+.org-comint-highlight-prompt,.org-keyword,.org-minibuffer-prompt,.org-mode-line-highlight,.org-org-checkbox-statistics-todo,.org-org-priority,.org-org-todo,.org-outline-3 {
+	color: #4a858c;
+	font-weight: 700;
+}
+
+.org-completions-annotations,.org-help-argument-name,.org-italic {
+	font-style: italic;
+}
+
+.org-diary,.org-org-date-selected {
+	color: red;
+}
+
+.org-file-name-shadow,.org-org-agenda-dimmed-todo,.org-org-archived,.org-shadow {
+	color: #7f7f7f;
+}
+
+.org-isearch,.org-query-replace {
+	background-color: #c9c1b9;
+	color: #ff1276;
+	font-weight: 700;
+}
+
+.org-match,.org-org-agenda-clocking,.org-org-clock-overlay,.org-secondary-selection {
+	background-color: #FF0;
+}
+
+.org-mode-line,.org-org-agenda-filter-category,.org-org-agenda-filter-regexp,.org-org-agenda-filter-tags,.org-org-mode-line-clock {
+	background-color: #dfd6cd;
+	color: #7d7d7d;
+	font-weight: 700;
+}
+
+.org-next-error,.org-region {
+	background-color: #585858;
+	color: #f5ebe1;
+}
+
+.org-org-agenda-calendar-event,.org-org-agenda-calendar-sexp,.org-org-agenda-diary,.org-org-default {
+	background-color: #f5ebe1;
+	color: #585858;
+}
+
+.org-org-agenda-column-dateline,.org-org-column {
+	background-color: #e5e5e5;
+}
+
+.org-org-agenda-current-time,.org-org-time-grid {
+	color: #b8860b;
+}
+
+.org-org-agenda-date,.org-org-agenda-date-weekend,.org-org-agenda-structure {
+	background-color: #c9c1b9;
+	color: #707070;
+	font-weight: 700;
+}
+
+.org-org-agenda-done,.org-org-level-4 {
+	color: #b4ada6;
+}
+
+.org-org-block,.org-org-level-2,.org-org-quote,.org-org-verse,.org-vertical-border {
+	color: #707070;
+}
+
+.org-org-checkbox-statistics-done,.org-org-done {
+	color: #b4ada6;
+	font-weight: 700;
+}
+
+.org-org-document-info-keyword,.org-org-special-keyword {
+	color: #bd745e;
+}
+
+.org-org-drawer,.org-org-table {
+	color: #00F;
+}
+
+.org-org-formula,.org-org-scheduled-previously,.org-org-upcoming-deadline {
+	color: #b22222;
+}
+
+.org-org-hide,.org-org-sexp-date,.org-org-verbatim {
+	color: #7d7d7d;
+}
+
+.org-org-latex-and-related,.org-org-macro {
+	color: #8b4513;
+}
+
+.org-org-level-5,.org-org-scheduled,.org-outline-5,.org-type {
+	color: #8c4a79;
+}
+
+.org-org-level-8,.org-outline-8,.org-string {
+	color: #b3534b;
+}
+
+.org-outline-2,.org-variable-name {
+	color: #476238;
+}
