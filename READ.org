@@ -1,0 +1,14 @@
+#+TITLE: org-html-theme-list
+#+AUTHOR: rgb-24bit
+
+* NOTE
+  这个列表列举了一些 =org-export-to-html= 的主题.
+
+* 主题列表 
+  + [[https://github.com/gongzhitaao/orgcss][orgcss]] 单纯的 /CSS/ 样式 [[[https://opensource.org/licenses/MIT][MIT]]]
+  + [[https://github.com/fniessen/org-html-themes][org-html-themes]] 拥有两个强大的主题, 值得一试 [[[https://opensource.org/licenses/GPL-3.0][GPL-3.0]]]
+
+* 相关
+  为了方便自己的使用, 部分主题我 /clone/ 了一个备份放在这个仓库, 这个仓库的备份可能不是最新的, 
+  如果你不介意的话, 也可以 /clone/ 这个仓库.
+
