@@ -1,0 +1,124 @@
+html {
+    background: #FFFFFF;
+    color: #000000;
+    font-family: "Consolas", "Lucida Console", "Menlo", monospace;
+    font-size: 85%;
+}
+
+body {
+    margin: 3em auto;
+    max-width: 50em;
+}
+
+a {
+    color: #395FCD;
+    text-decoration: none;
+    padding: 1px;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+/* inline code */
+code {
+}
+
+pre,
+blockquote,
+.TIP,
+.NOTE,
+.WARN {
+    border: 1px dashed #2C323D;
+    border-radius: 3px;
+    padding: 1em 1em 1em 1.5em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+/*
+pre {
+    border-left: 3px solid #A691E2;
+}
+*/
+
+/* quote */
+blockquote {
+    border-left: 3px solid #E0E3DA;
+}
+
+/* tip */
+.TIP {
+    border-left: 3px solid #4ED8A0;
+}
+
+/* note */
+.NOTE {
+    border-left: 3px solid #E2E541;
+}
+
+/* warning */
+.WARN {
+    border-left: 3px solid #D61E15;
+}
+
+/* img */
+img {
+    width: 500px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1pt solid #9595B6;
+}
+
+/* kbd */
+kbd {
+    display: inline-block;
+    background: #FCFCFC;
+    border: solid 1px #CCCCCC;
+    border-bottom-color: #BBBBBB;
+    border-radius: 3px;
+    color: #555555;
+    box-shadow: inset 0 -1px 0 #BBBBBB;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    vertical-align: middle;
+}
+
+/* org-mode info view */
+.org-info-js_info-navigation {
+    border-bottom: 1px solid #2C323D;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+/* postamble */
+div#postamble {
+    border-top: 1px solid #2C323D;
+    padding-top: 1em;
+    text-align: right;
+    font-size: 80%;
+}
+
+div#postamble p {
+    padding: 0;
+    margin: 0;
+}
