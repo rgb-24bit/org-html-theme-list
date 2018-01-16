@@ -4,9 +4,16 @@
 * NOTE
   这个列表列举了一些 =org-export-to-html= 的主题.
 
-* 主题列表 
+* Github
+  来自 =Github= 的主题
   + [[https://github.com/gongzhitaao/orgcss][orgcss]] - 单纯的 /CSS/ 样式 [[[https://opensource.org/licenses/MIT][MIT]]]
   + [[https://github.com/fniessen/org-html-themes][org-html-themes]] - 拥有两个强大的主题, 值得一试 [[[https://opensource.org/licenses/GPL-3.0][GPL-3.0]]]
+  + [[https://github.com/thi-ng/org-spec][org-spec]] - 简洁的主题 [[[https://opensource.org/licenses/MIT][MIT]]]
+  + [[https://github.com/dodrio/iv][iv]] - 结构清晰的主题 [[[https://opensource.org/licenses/GPL-3.0][GPL-3.0]]]
+  + [[https://github.com/ptpt/org-notes-style][org-notes-style]] - 简介美观的主题
+
+* Blog 
+  来自 =Blog= 的样式
   + [[http://bastibe.de/static/style.css][bastibe's blog style]] - 链接指向 [[https://github.com/bastibe][bastibe]] 的博客所使用的样式文件 [[[https://github.com/bastibe/org-static-blog#license][LICENSE]]]
   + [[https://ogbe.net/res/main.css][ogbe' blog style]] - 链接指向 [[https://ogbe.net][ogbe]] 的博客所使用的样式文件(代码样式[[https://ogbe.net/res/code.css][code.css]]) [[[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]]]
   + [[https://github.com/guidao/guidao.github.io/blob/master/css/org-css.css][guidao's blog style]] - 链接指向 [[https://guidao.github.io/index.html][guidao]] 的博客所使用的样式文件
@@ -15,4 +22,8 @@
 * 相关
   为了方便自己的使用, 部分主题我 /clone/ 了一个备份放在这个仓库, 这个仓库的备份可能不是最新的, 
   如果你不介意的话, 也可以 /clone/ 这个仓库.
+  
+  其中来自 /Github/ 的主题文件夹和原项目的名称相同.
+
+  来自 /Blog/ 的样式按 =org-name= 的格式命名.
 
