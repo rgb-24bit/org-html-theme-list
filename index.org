@@ -18,5 +18,9 @@
 | org-ogbe        | [[./org-ogbe/example.html][example.html]]            |
 | org-guidao      | [[./org-guidao/example.html][example.html]]            |
 | org-nicolas     | [[./org-nicolas/example.html][example.html]]            |
+| org-joshua      | [[./org-joshua/example.html][example.html]]            |
+| org-norang      | [[./org-norang/example.html][example.html]]            |
+| solarized-css   | [[./solarized-css/example-dark.html][example-dark.html]]       |
+| solarized-css   | [[./solarized-css/example-light.html][example-light.html]]      |
 |-----------------+-------------------------|
 
