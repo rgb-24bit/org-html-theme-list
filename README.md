@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [NOTE](#orgdacf5c2)
-2.  [Github](#org4a510fb)
-3.  [Blog](#orga06c8c0)
-4.  [主题样例](#org4d4a446)
-5.  [相关](#org8b30d88)
+1.  [NOTE](#org6f2a6cd)
+2.  [Github](#org34bb62c)
+3.  [Blog & Article](#orgd562a32)
+4.  [主题样例](#orgfe1d3d7)
+5.  [相关](#orgf4c3494)
 
 
 
-<a id="orgdacf5c2"></a>
+<a id="org6f2a6cd"></a>
 
 # NOTE
 
 这个列表列举了一些 `org-export-to-html` 的主题.
 
 
-<a id="org4a510fb"></a>
+<a id="org34bb62c"></a>
 
 # Github
 
@@ -27,21 +27,25 @@
 -   [org-spec](https://github.com/thi-ng/org-spec) - 简洁的主题 [[MIT](https://opensource.org/licenses/MIT)]
 -   [iv](https://github.com/dodrio/iv) - 结构清晰的主题 [[GPL-3.0](https://opensource.org/licenses/GPL-3.0)]
 -   [org-notes-style](https://github.com/ptpt/org-notes-style) - 简介美观的主题
+-   [solarized-css](https://github.com/thomasf/solarized-css) - solarized 明暗两种 [[MIT](https://opensource.org/licenses/MIT)]
+-   
 
 
-<a id="orga06c8c0"></a>
+<a id="orgd562a32"></a>
 
-# Blog
+# Blog & Article
 
 来自 `Blog` 的样式
 
 -   [bastibe's blog style](http://bastibe.de/static/style.css) - 链接指向 [bastibe](https://github.com/bastibe) 的博客所使用的样式文件 [[LICENSE](https://github.com/bastibe/org-static-blog#license)]
 -   [ogbe' blog style](https://ogbe.net/res/main.css) - 链接指向 [ogbe](https://ogbe.net) 的博客所使用的样式文件(代码样式[code.css](https://ogbe.net/res/code.css)) [[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)]
 -   [guidao's blog style](https://github.com/guidao/guidao.github.io/blob/master/css/org-css.css) - 链接指向 [guidao](https://guidao.github.io/index.html) 的博客所使用的样式文件
--   [Nicolas Petton' blog style](https://nicolas.petton.fr/css/site.css?v=2) 链接指向 [Nicolas Petton](https://nicolas.petton.fr/) 的博客所使用的样式文件
+-   [Nicolas Petton' blog style](https://nicolas.petton.fr/css/site.css?v=2) - 链接指向 [Nicolas Petton](https://nicolas.petton.fr/) 的博客所使用的样式文件
+-   [Joshua Eckroth's article style](http://cse3521.artifice.cc/css/worg.css) - 链接指向 [Joshua Ecirc](http://cse3521.artifice.cc/index.html) 的文章所使用的的样式文件 [[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)]
+-   [Norang's article style](http://doc.norang.ca/org.css) - 链接指向 [Norang](http://doc.norang.ca/) 的文章所使用的的样式文件
 
 
-<a id="org4d4a446"></a>
+<a id="orgfe1d3d7"></a>
 
 # 主题样例
 
@@ -50,7 +54,7 @@
 链接: [主题样例](https://rgb-24bit.github.io/org-html-theme-list)
 
 
-<a id="org8b30d88"></a>
+<a id="orgf4c3494"></a>
 
 # 相关
 
