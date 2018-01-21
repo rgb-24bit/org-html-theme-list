@@ -22,6 +22,7 @@
   + [[https://nicolas.petton.fr/css/site.css?v=2][Nicolas Petton' blog style]] - 链接指向 [[https://nicolas.petton.fr/][Nicolas Petton]] 的博客所使用的样式文件
   + [[http://cse3521.artifice.cc/css/worg.css][Joshua Eckroth's article style]] - 链接指向 [[http://cse3521.artifice.cc/index.html][Joshua Ecirc]] 的文章所使用的的样式文件 [[[https://creativecommons.org/licenses/by-sa/3.0/][CC BY-SA 3.0]]]
   + [[http://doc.norang.ca/org.css][Norang's article style]] - 链接指向 [[http://doc.norang.ca/][Norang]] 的文章所使用的的样式文件
+  + [[http://lifegoo.pluskid.org/wiki/css/style.css][星黎殿]] - 链接指向 [[http://lifegoo.pluskid.org/wiki/index.html][星黎殿]] 使用的样式文件
     
 * 主题样例
   样例采用的 =org= 源码是 =org-mode= 官网的 [[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][org-publish-html-tutorial]] 文档源码.

@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [NOTE](#org6f2a6cd)
-2.  [Github](#org34bb62c)
-3.  [Blog & Article](#orgd562a32)
-4.  [主题样例](#orgfe1d3d7)
-5.  [相关](#orgf4c3494)
+1.  [NOTE](#org35c066a)
+2.  [Github](#org4fd8ef7)
+3.  [Blog & Article](#org7b08450)
+4.  [主题样例](#org90ee971)
+5.  [相关](#org653bbc2)
 
 
 
-<a id="org6f2a6cd"></a>
+<a id="org35c066a"></a>
 
 # NOTE
 
 这个列表列举了一些 `org-export-to-html` 的主题.
 
 
-<a id="org34bb62c"></a>
+<a id="org4fd8ef7"></a>
 
 # Github
 
@@ -31,7 +31,7 @@
 -   
 
 
-<a id="orgd562a32"></a>
+<a id="org7b08450"></a>
 
 # Blog & Article
 
@@ -43,9 +43,10 @@
 -   [Nicolas Petton' blog style](https://nicolas.petton.fr/css/site.css?v=2) - 链接指向 [Nicolas Petton](https://nicolas.petton.fr/) 的博客所使用的样式文件
 -   [Joshua Eckroth's article style](http://cse3521.artifice.cc/css/worg.css) - 链接指向 [Joshua Ecirc](http://cse3521.artifice.cc/index.html) 的文章所使用的的样式文件 [[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)]
 -   [Norang's article style](http://doc.norang.ca/org.css) - 链接指向 [Norang](http://doc.norang.ca/) 的文章所使用的的样式文件
+-   [星黎殿](http://lifegoo.pluskid.org/wiki/css/style.css) - 链接指向 [星黎殿](http://lifegoo.pluskid.org/wiki/index.html) 使用的样式文件
 
 
-<a id="orgfe1d3d7"></a>
+<a id="org90ee971"></a>
 
 # 主题样例
 
@@ -54,7 +55,7 @@
 链接: [主题样例](https://rgb-24bit.github.io/org-html-theme-list)
 
 
-<a id="orgf4c3494"></a>
+<a id="org653bbc2"></a>
 
 # 相关
 
