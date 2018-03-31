@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-01-16 周二 11:40 -->
+<!-- 2018-03-31 周六 16:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Publishing Org-mode files to HTML</title>
@@ -181,13 +181,13 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-<link rel="stylesheet" type="text/css" href="main.css"/>
+<link rel="stylesheet" type="text/css" href="https://rgb-24bit.github.io/org-html-theme-list/org-nicolas/main.css"/>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -258,45 +258,45 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org979411d">Introduction</a></li>
-<li><a href="#org4e8b3f2">Basics</a></li>
-<li><a href="#orgecb18b9">Publishing the <i>org</i> project</a>
+<li><a href="#orga5624c5">Introduction</a></li>
+<li><a href="#org723fe33">Basics</a></li>
+<li><a href="#org0d71c67">Publishing the <i>org</i> project</a>
 <ul>
-<li><a href="#org581a867">The <i>notes</i> component</a></li>
-<li><a href="#org62784f0">The <i>static</i> component</a></li>
-<li><a href="#orgc20f175">The <i>publish</i> component</a></li>
-<li><a href="#org7fa1465">Pooh - can we publish now?</a></li>
+<li><a href="#org5aaff23">The <i>notes</i> component</a></li>
+<li><a href="#orgcfd2e4e">The <i>static</i> component</a></li>
+<li><a href="#org1c05836">The <i>publish</i> component</a></li>
+<li><a href="#org043e2cf">Pooh - can we publish now?</a></li>
 </ul>
 </li>
-<li><a href="#org315561a">Adding directories</a></li>
-<li><a href="#orgb45ff56">Overwrite the defaults</a>
+<li><a href="#org6546cee">Adding directories</a></li>
+<li><a href="#org8413e6c">Overwrite the defaults</a>
 <ul>
-<li><a href="#orga81d4ed">The export options template</a></li>
-<li><a href="#org21d080f">Special comment section</a></li>
+<li><a href="#orgfcd99c7">The export options template</a></li>
+<li><a href="#orgb7f3d61">Special comment section</a></li>
 </ul>
 </li>
-<li><a href="#orgde2a6fd">Tired of export templates?</a>
+<li><a href="#org78fccf8">Tired of export templates?</a>
 <ul>
-<li><a href="#org56a1d4b">More level files</a></li>
+<li><a href="#org5590a7c">More level files</a></li>
 </ul>
 </li>
-<li><a href="#org2fb3cd0">More Projects</a>
+<li><a href="#org32a621e">More Projects</a>
 <ul>
-<li><a href="#org92ae68a">The <i>inherit</i> component</a>
+<li><a href="#org00cf112">The <i>inherit</i> component</a>
 <ul>
-<li><a href="#org4aa6c79">One more Example</a></li>
+<li><a href="#org6601d18">One more Example</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org7b63db6">Overview</a>
+<li><a href="#orgf95672b">Overview</a>
 <ul>
-<li><a href="#orgb314f97">The sitemap</a></li>
-<li><a href="#orgaad2a1c">org-info.js</a></li>
+<li><a href="#orgb99d463">The sitemap</a></li>
+<li><a href="#org4695e6c">org-info.js</a></li>
 </ul>
 </li>
-<li><a href="#orgffaf951">Special symbols</a></li>
-<li><a href="#org5d4a620">Further reading</a></li>
+<li><a href="#org19920f9">Special symbols</a></li>
+<li><a href="#orgef3737b">Further reading</a></li>
 </ul>
 </div>
 </div>
@@ -304,9 +304,9 @@ for the JavaScript code in this tag.
 {Back to Worg's index}
 </p>
 
-<div id="outline-container-org979411d" class="outline-2">
-<h2 id="org979411d">Introduction</h2>
-<div class="outline-text-2" id="text-org979411d">
+<div id="outline-container-orga5624c5" class="outline-2">
+<h2 id="orga5624c5">Introduction</h2>
+<div class="outline-text-2" id="text-orga5624c5">
 <p>
 This Tutorial describes one of many ways to publishing Org-mode files to
 XHTML. We use the publishing mechanism to keep the <code>*.html</code> files separated
@@ -334,9 +334,9 @@ everywhere.
 </div>
 </div>
 
-<div id="outline-container-org4e8b3f2" class="outline-2">
-<h2 id="org4e8b3f2">Basics</h2>
-<div class="outline-text-2" id="text-org4e8b3f2">
+<div id="outline-container-org723fe33" class="outline-2">
+<h2 id="org723fe33">Basics</h2>
+<div class="outline-text-2" id="text-org723fe33">
 <p>
 Throughout this tutorial, let's assume that all our Org-mode files live beneath
 <code>~/org/</code> and we publish them to <code>~/public_html/</code>.
@@ -407,15 +407,15 @@ try to turn on <code>iimage-mode</code> <sup><a id="fnr.2" class="footref" href=
 </p>
 
 <p>
-Optionally, set up the stylesheet as shown in section <a href="#org0559f60">Special comment
+Optionally, set up the stylesheet as shown in section <a href="#orgfffc7cc">Special comment
 section</a>. The recommended way is to use a real stylesheet though.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgecb18b9" class="outline-2">
-<h2 id="orgecb18b9">Publishing the <i>org</i> project</h2>
-<div class="outline-text-2" id="text-orgecb18b9">
+<div id="outline-container-org0d71c67" class="outline-2">
+<h2 id="org0d71c67">Publishing the <i>org</i> project</h2>
+<div class="outline-text-2" id="text-org0d71c67">
 <p>
 To publish the <code>~/org/</code> project to HTML, we'll have to setup the variable
 <code>org-publish-project-alist</code> <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.  I tend to split each project in three basic
@@ -439,13 +439,13 @@ First of all, enter this into the <code>*scratch*</code> buffer:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">require</span> '<span class="org-constant">ox-publish</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">setq</span> org-publish-project-alist
-      '<span class="org-rainbow-delimiters-depth-2">(</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #859900;">require</span> '<span style="color: #268bd2;">ox-publish</span><span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #859900;">setq</span> org-publish-project-alist
+      '<span style="color: #2aa198;">(</span>
 
-       <span class="org-comment-delimiter">;; </span><span class="org-comment">... add all the components here (see below)...</span>
+       <span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... add all the components here (see below)...</span>
 
-      <span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+      <span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -455,9 +455,9 @@ is now.
 </p>
 </div>
 
-<div id="outline-container-org581a867" class="outline-3">
-<h3 id="org581a867">The <i>notes</i> component</h3>
-<div class="outline-text-3" id="text-org581a867">
+<div id="outline-container-org5aaff23" class="outline-3">
+<h3 id="org5aaff23">The <i>notes</i> component</h3>
+<div class="outline-text-3" id="text-org5aaff23">
 <p>
 The <i>notes</i> component publishes all the Org-mode files to HTML. Hence the
 <code>publishing-function</code> is set to <code>org-publish-org-to-html</code>. Here is an example
@@ -465,15 +465,15 @@ of the notes component:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"org-notes"</span>
- <span class="org-builtin">:base-directory</span> <span class="org-string">"~/org/"</span>
- <span class="org-builtin">:base-extension</span> <span class="org-string">"org"</span>
- <span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/public_html/"</span>
- <span class="org-builtin">:recursive</span> t
- <span class="org-builtin">:publishing-function</span> org-html-publish-to-html
- <span class="org-builtin">:headline-levels</span> <span class="org-highlight-numbers-number">4</span>             <span class="org-comment-delimiter">; </span><span class="org-comment">Just the default for this project.</span>
- <span class="org-builtin">:auto-preamble</span> t
- <span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org-notes"</span>
+ <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
+ <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+ <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/"</span>
+ <span style="color: #6c71c4;">:recursive</span> t
+ <span style="color: #6c71c4;">:publishing-function</span> org-html-publish-to-html
+ <span style="color: #6c71c4;">:headline-levels</span> <span style="color: #268bd2;">4</span>             <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">Just the default for this project.</span>
+ <span style="color: #6c71c4;">:auto-preamble</span> t
+ <span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -524,9 +524,9 @@ The most important settings here are:
 </div>
 </div>
 
-<div id="outline-container-org62784f0" class="outline-3">
-<h3 id="org62784f0">The <i>static</i> component</h3>
-<div class="outline-text-3" id="text-org62784f0">
+<div id="outline-container-orgcfd2e4e" class="outline-3">
+<h3 id="orgcfd2e4e">The <i>static</i> component</h3>
+<div class="outline-text-3" id="text-orgcfd2e4e">
 <p>
 The <i>static</i> component just copies files (and their folders) from
 <code>:base-directory</code> to <code>:publishing-directory</code> without changing them. Thus
@@ -534,13 +534,13 @@ let's tell Org-mode to use the function <code>org-publish-attachment</code>:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"org-static"</span>
- <span class="org-builtin">:base-directory</span> <span class="org-string">"~/org/"</span>
- <span class="org-builtin">:base-extension</span> <span class="org-string">"css</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">js</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">png</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">jpg</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">gif</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">pdf</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">mp3</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">ogg</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">swf"</span>
- <span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/public_html/"</span>
- <span class="org-builtin">:recursive</span> t
- <span class="org-builtin">:publishing-function</span> org-publish-attachment
- <span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org-static"</span>
+ <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
+ <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">png</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">gif</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">swf"</span>
+ <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/"</span>
+ <span style="color: #6c71c4;">:recursive</span> t
+ <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment
+ <span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -550,9 +550,9 @@ let's tell Org-mode to use the function <code>org-publish-attachment</code>:
 </div>
 </div>
 
-<div id="outline-container-orgc20f175" class="outline-3">
-<h3 id="orgc20f175">The <i>publish</i> component</h3>
-<div class="outline-text-3" id="text-orgc20f175">
+<div id="outline-container-org1c05836" class="outline-3">
+<h3 id="org1c05836">The <i>publish</i> component</h3>
+<div class="outline-text-3" id="text-org1c05836">
 <p>
 To publish all with one command, we add the <i>publish</i> component. For this
 component I usually drop the suffix and just use the basename of the
@@ -560,7 +560,7 @@ project.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"org"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"org-notes"</span> <span class="org-string">"org-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"org-notes"</span> <span style="color: #2aa198;">"org-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -572,9 +572,9 @@ don't yet exist.
 </div>
 </div>
 
-<div id="outline-container-org7fa1465" class="outline-3">
-<h3 id="org7fa1465">Pooh - can we publish now?</h3>
-<div class="outline-text-3" id="text-org7fa1465">
+<div id="outline-container-org043e2cf" class="outline-3">
+<h3 id="org043e2cf">Pooh - can we publish now?</h3>
+<div class="outline-text-3" id="text-org043e2cf">
 <p>
 The good message is <b>yes, we can</b>. Just one little hump. Since we've put the
 definition for our publishing components in the <code>*scratch*</code> buffer, again,
@@ -582,13 +582,13 @@ make sure all the <i>components</i> are enclosed by the lines
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">require</span> '<span class="org-constant">org-publish</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">setq</span> org-publish-project-alist
-      '<span class="org-rainbow-delimiters-depth-2">(</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #859900;">require</span> '<span style="color: #268bd2;">org-publish</span><span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #859900;">setq</span> org-publish-project-alist
+      '<span style="color: #2aa198;">(</span>
 
-       <span class="org-comment-delimiter">;; </span><span class="org-comment">... all the components ...</span>
+       <span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... all the components ...</span>
 
-      <span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+      <span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -611,9 +611,9 @@ not, simply navigate to <a href="file:///e:/home/user/public_html">file:///e:/ho
 </div>
 </div>
 
-<div id="outline-container-org315561a" class="outline-2">
-<h2 id="org315561a">Adding directories</h2>
-<div class="outline-text-2" id="text-org315561a">
+<div id="outline-container-org6546cee" class="outline-2">
+<h2 id="org6546cee">Adding directories</h2>
+<div class="outline-text-2" id="text-org6546cee">
 <p>
 As we add more and more files to <code>~/org/</code>, we will soon end up with filenames
 like '<code>networking-ssh-sshd-config.org</code>' or longer. What we need is a
@@ -649,9 +649,9 @@ the latest to export the subdirectories too.
 </div>
 </div>
 
-<div id="outline-container-orgb45ff56" class="outline-2">
-<h2 id="orgb45ff56">Overwrite the defaults</h2>
-<div class="outline-text-2" id="text-orgb45ff56">
+<div id="outline-container-org8413e6c" class="outline-2">
+<h2 id="org8413e6c">Overwrite the defaults</h2>
+<div class="outline-text-2" id="text-org8413e6c">
 <p>
 The defaults set by <code>org-publish-project-alist</code> may be overwritten. You might
 want to justify the export properties for single files. Be it the level of
@@ -660,9 +660,9 @@ the settings for a single file.
 </p>
 </div>
 
-<div id="outline-container-orga81d4ed" class="outline-3">
-<h3 id="orga81d4ed">The export options template</h3>
-<div class="outline-text-3" id="text-orga81d4ed">
+<div id="outline-container-orgfcd99c7" class="outline-3">
+<h3 id="orgfcd99c7">The export options template</h3>
+<div class="outline-text-3" id="text-orgfcd99c7">
 <p>
 The first choice is the <i>export options template</i> on top of the file. When in
 an Org-mode file, you may insert basic information using <code>C-c C-e #</code>
@@ -731,9 +731,9 @@ twice.
 </div>
 </div>
 
-<div id="outline-container-org21d080f" class="outline-3">
-<h3 id="org21d080f"><a id="org0559f60">Special comment section</a></h3>
-<div class="outline-text-3" id="text-org21d080f">
+<div id="outline-container-orgb7f3d61" class="outline-3">
+<h3 id="orgb7f3d61"><a id="orgfffc7cc">Special comment section</a></h3>
+<div class="outline-text-3" id="text-orgb7f3d61">
 <p>
 Also, CSS style variables may be using a special section may be
 #insert/appended to Org-mode files:
@@ -757,9 +757,9 @@ Also, CSS style variables may be using a special section may be
 </div>
 </div>
 
-<div id="outline-container-orgde2a6fd" class="outline-2">
-<h2 id="orgde2a6fd">Tired of export templates?</h2>
-<div class="outline-text-2" id="text-orgde2a6fd">
+<div id="outline-container-org78fccf8" class="outline-2">
+<h2 id="org78fccf8">Tired of export templates?</h2>
+<div class="outline-text-2" id="text-org78fccf8">
 <p>
 If you're like me, you will soon get tired of adding the same export options
 template to numerous files and adjust the title and paths in it. Luckily,
@@ -770,7 +770,7 @@ following files there:
 
 <ul class="org-ul">
 <li><code>level-0.org</code> <br />
-This file contains all export options lines. The <a href="#org0559f60">special comment section</a>
+This file contains all export options lines. The <a href="#orgfffc7cc">special comment section</a>
 will not work for files in subdirectories. Hence we always use the export
 options line
 :#+STYLE: &lt;link rel="stylesheet" type="text/css" href="stylesheet.css" /&gt;
@@ -789,7 +789,7 @@ for the stylesheet looks like this:
 </ul>
 
 <p>
-Now remove the <a href="#org0559f60">special comment section</a> from the end of your Org-mode files in
+Now remove the <a href="#orgfffc7cc">special comment section</a> from the end of your Org-mode files in
 the project folders and change the export options template to
 </p>
 
@@ -807,9 +807,9 @@ changes. Subsequent lines still overwrite the settings for just this one file.
 </div>
 
 
-<div id="outline-container-org56a1d4b" class="outline-3">
-<h3 id="org56a1d4b">More level files</h3>
-<div class="outline-text-3" id="text-org56a1d4b">
+<div id="outline-container-org5590a7c" class="outline-3">
+<h3 id="org5590a7c">More level files</h3>
+<div class="outline-text-3" id="text-org5590a7c">
 <p>
 Also, these <i>level-N</i> files give us the chance to easily switch between different
 export setups. As an example, we could have a separate stylesheet and
@@ -832,9 +832,9 @@ in our project.
 </div>
 </div>
 
-<div id="outline-container-org2fb3cd0" class="outline-2">
-<h2 id="org2fb3cd0">More Projects</h2>
-<div class="outline-text-2" id="text-org2fb3cd0">
+<div id="outline-container-org32a621e" class="outline-2">
+<h2 id="org32a621e">More Projects</h2>
+<div class="outline-text-2" id="text-org32a621e">
 <p>
 As we get used to note taking in org, we might add an <code>org</code> directory to most
 of our projects. All those projects are published as well. Project '<code>~/B/</code>'
@@ -844,9 +844,9 @@ stylesheets and current JavaScripts &#x2014; and to a new <i>component</i>.
 </p>
 </div>
 
-<div id="outline-container-org92ae68a" class="outline-3">
-<h3 id="org92ae68a">The <i>inherit</i> component</h3>
-<div class="outline-text-3" id="text-org92ae68a">
+<div id="outline-container-org00cf112" class="outline-3">
+<h3 id="org00cf112">The <i>inherit</i> component</h3>
+<div class="outline-text-3" id="text-org00cf112">
 <p>
 Once we get tired of copying the static files from one project to another, the
 following configuration does the trick for us. We simply add the <i>inherit</i>
@@ -856,34 +856,34 @@ there.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"B-inherit"</span>
- <span class="org-builtin">:base-directory</span> <span class="org-string">"~/org/"</span>
- <span class="org-builtin">:recursive</span> t
- <span class="org-builtin">:base-extension</span> <span class="org-string">"css</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">js"</span>
- <span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/public_html/B/"</span>
- <span class="org-builtin">:publishing-function</span> org-publish-attachment
-<span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"B-inherit"</span>
+ <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
+ <span style="color: #6c71c4;">:recursive</span> t
+ <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js"</span>
+ <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
+ <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment
+<span style="color: #839496;">)</span>
 
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"B-org"</span>
-<span class="org-builtin">:base-directory</span> <span class="org-string">"~/B/"</span>
-<span class="org-builtin">:auto-index</span> t
-<span class="org-builtin">:index-filename</span> <span class="org-string">"sitemap.org"</span>
-<span class="org-builtin">:index-title</span> <span class="org-string">"Sitemap"</span>
-<span class="org-builtin">:recursive</span> t
-<span class="org-builtin">:base-extension</span> <span class="org-string">"org"</span>
-<span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/public_html/B/"</span>
-<span class="org-builtin">:publishing-function</span> org-publish-org-to-html
-<span class="org-builtin">:headline-levels</span> <span class="org-highlight-numbers-number">3</span>
-<span class="org-builtin">:auto-preamble</span> t
-<span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"B-static"</span>
- <span class="org-builtin">:base-directory</span> <span class="org-string">"~/B/"</span>
- <span class="org-builtin">:recursive</span> t
- <span class="org-builtin">:base-extension</span> <span class="org-string">"css</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">js</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">png</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">jpg</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">gif</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">pdf</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">mp3</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">ogg</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">|</span></span><span class="org-string">swf"</span>
- <span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/public_html/B/"</span>
- <span class="org-builtin">:publishing-function</span> org-publish-attachment<span class="org-rainbow-delimiters-depth-1">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"B-org"</span>
+<span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/B/"</span>
+<span style="color: #6c71c4;">:auto-index</span> t
+<span style="color: #6c71c4;">:index-filename</span> <span style="color: #2aa198;">"sitemap.org"</span>
+<span style="color: #6c71c4;">:index-title</span> <span style="color: #2aa198;">"Sitemap"</span>
+<span style="color: #6c71c4;">:recursive</span> t
+<span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+<span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
+<span style="color: #6c71c4;">:publishing-function</span> org-publish-org-to-html
+<span style="color: #6c71c4;">:headline-levels</span> <span style="color: #268bd2;">3</span>
+<span style="color: #6c71c4;">:auto-preamble</span> t
+<span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"B-static"</span>
+ <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/B/"</span>
+ <span style="color: #6c71c4;">:recursive</span> t
+ <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">png</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">gif</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">swf"</span>
+ <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
+ <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment<span style="color: #839496;">)</span>
 
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"B"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"B-inherit"</span> <span class="org-string">"B-notes"</span> <span class="org-string">"B-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"B"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"B-inherit"</span> <span style="color: #2aa198;">"B-notes"</span> <span style="color: #2aa198;">"B-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -902,28 +902,28 @@ the sequence listed: first get the new stylesheet into <code>B</code>, then exec
 </p>
 </div>
 
-<div id="outline-container-org4aa6c79" class="outline-4">
-<h4 id="org4aa6c79">One more Example</h4>
-<div class="outline-text-4" id="text-org4aa6c79">
+<div id="outline-container-org6601d18" class="outline-4">
+<h4 id="org6601d18">One more Example</h4>
+<div class="outline-text-4" id="text-org6601d18">
 <p>
 As I use org-info.js and track Worg git, I use "<code>inherit-org-info-js</code>" in all
 my <code>org</code> projects:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"inherit-org-info-js"</span>
- <span class="org-builtin">:base-directory</span> <span class="org-string">"~/develop/org/Worg/code/org-info-js/"</span>
- <span class="org-builtin">:recursive</span> t
- <span class="org-builtin">:base-extension</span> <span class="org-string">"js"</span>
- <span class="org-builtin">:publishing-directory</span> <span class="org-string">"~/org/"</span>
- <span class="org-builtin">:publishing-function</span> org-publish-attachment<span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span>
+ <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/develop/org/Worg/code/org-info-js/"</span>
+ <span style="color: #6c71c4;">:recursive</span> t
+ <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"js"</span>
+ <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/org/"</span>
+ <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment<span style="color: #839496;">)</span>
 
-<span class="org-comment-delimiter">;; </span><span class="org-comment">... all the rest ... ;;</span>
+<span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... all the rest ... ;;</span>
 
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"B"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"inherit-org-info-js"</span> <span class="org-string">"B-inherit"</span> <span class="org-string">"B-notes"</span> <span class="org-string">"B-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"C"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"inherit-org-info-js"</span> <span class="org-string">"C-inherit"</span> <span class="org-string">"C-notes"</span> <span class="org-string">"C-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"D"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"inherit-org-info-js"</span> <span class="org-string">"D-inherit"</span> <span class="org-string">"D-notes"</span> <span class="org-string">"D-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"E"</span> <span class="org-builtin">:components</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"inherit-org-info-js"</span> <span class="org-string">"E-inherit"</span> <span class="org-string">"E-notes"</span> <span class="org-string">"E-static"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"B"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"B-inherit"</span> <span style="color: #2aa198;">"B-notes"</span> <span style="color: #2aa198;">"B-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"C"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"C-inherit"</span> <span style="color: #2aa198;">"C-notes"</span> <span style="color: #2aa198;">"C-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"D"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"D-inherit"</span> <span style="color: #2aa198;">"D-notes"</span> <span style="color: #2aa198;">"D-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
+<span style="color: #839496;">(</span><span style="color: #2aa198;">"E"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"E-inherit"</span> <span style="color: #2aa198;">"E-notes"</span> <span style="color: #2aa198;">"E-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
 </pre>
 </div>
 
@@ -936,9 +936,9 @@ version of <code>org-info.js</code>.
 </div>
 </div>
 
-<div id="outline-container-org7b63db6" class="outline-2">
-<h2 id="org7b63db6">Overview</h2>
-<div class="outline-text-2" id="text-org7b63db6">
+<div id="outline-container-orgf95672b" class="outline-2">
+<h2 id="orgf95672b">Overview</h2>
+<div class="outline-text-2" id="text-orgf95672b">
 <p>
 Once there are lots of files and subdirectories, we're in the need of ways to
 easily navigate our notes in a browser. What we need now, is an index, an
@@ -946,9 +946,9 @@ overview of all our note files.
 </p>
 </div>
 
-<div id="outline-container-orgb314f97" class="outline-3">
-<h3 id="orgb314f97">The sitemap</h3>
-<div class="outline-text-3" id="text-orgb314f97">
+<div id="outline-container-orgb99d463" class="outline-3">
+<h3 id="orgb99d463">The sitemap</h3>
+<div class="outline-text-3" id="text-orgb99d463">
 <p>
 Org-modes great publishing also generates a recursive sitemap. Its name 
 defaults to <code>sitemap.org</code>, which get's in our way, since we have a real 
@@ -958,9 +958,9 @@ add these lines to the <i>notes</i> component:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span class="org-builtin">:auto-sitemap</span> t                <span class="org-comment-delimiter">; </span><span class="org-comment">Generate sitemap.org automagically...</span>
-<span class="org-builtin">:sitemap-filename</span> <span class="org-string">"sitemap.org"</span>  <span class="org-comment-delimiter">; </span><span class="org-comment">... call it sitemap.org (it's the default)...</span>
-<span class="org-builtin">:sitemap-title</span> <span class="org-string">"Sitemap"</span>         <span class="org-comment-delimiter">; </span><span class="org-comment">... with title 'Sitemap'.</span>
+<pre class="src src-emacs-lisp"><span style="color: #6c71c4;">:auto-sitemap</span> t                <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">Generate sitemap.org automagically...</span>
+<span style="color: #6c71c4;">:sitemap-filename</span> <span style="color: #2aa198;">"sitemap.org"</span>  <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">... call it sitemap.org (it's the default)...</span>
+<span style="color: #6c71c4;">:sitemap-title</span> <span style="color: #2aa198;">"Sitemap"</span>         <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">... with title 'Sitemap'.</span>
 </pre>
 </div>
 
@@ -987,9 +987,9 @@ first.
 </div>
 </div>
 
-<div id="outline-container-orgaad2a1c" class="outline-3">
-<h3 id="orgaad2a1c">org-info.js</h3>
-<div class="outline-text-3" id="text-orgaad2a1c">
+<div id="outline-container-org4695e6c" class="outline-3">
+<h3 id="org4695e6c">org-info.js</h3>
+<div class="outline-text-3" id="text-org4695e6c">
 <p>
 Another way to get additional links to navigate the structure is
 org-info.js. Let's set it up like this (either in every file, or in
@@ -1047,9 +1047,9 @@ No matter where we are, we may always press <code>h</code> to move up the tree.
 </div>
 </div>
 
-<div id="outline-container-orgffaf951" class="outline-2">
-<h2 id="orgffaf951">Special symbols</h2>
-<div class="outline-text-2" id="text-orgffaf951">
+<div id="outline-container-org19920f9" class="outline-2">
+<h2 id="org19920f9">Special symbols</h2>
+<div class="outline-text-2" id="text-org19920f9">
 <p>
 This is a list of LaTeX symbols understood by Org-mode. You may use most of
 those LaTeX symbols to get the desired results (shown in the first column)
@@ -2511,9 +2511,9 @@ the bottom of that page).
 </div>
 
 
-<div id="outline-container-org5d4a620" class="outline-2">
-<h2 id="org5d4a620">Further reading</h2>
-<div class="outline-text-2" id="text-org5d4a620">
+<div id="outline-container-orgef3737b" class="outline-2">
+<h2 id="orgef3737b">Further reading</h2>
+<div class="outline-text-2" id="text-orgef3737b">
 <p>
 For more information you might want to read the great Org-mode manual. One of
 the nicest mailing lists on this planet, BTW, is emacs-orgmode (archive)
@@ -2559,9 +2559,9 @@ to <a href="https://orgmode.org/worg/">https://orgmode.org/worg/</a> we will fac
 </div>
 </div></div>
 <div id="postamble" class="status">
-<a class="author"
-           href="">Sebastian Rose</a> / <span
-           class="date">Last Update:2018-01-16 周二 11:40</span><span class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.1.4)</span>
+<p class="author">Author: Sebastian Rose</p>
+<p class="date">Created: 2018-03-31 周六 16:13</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
