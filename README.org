@@ -10,17 +10,17 @@
   *注:* 演示网页的源码来自 [[https://orgmode.org/worg/orgcard.html][Org-Mode Reference Card]].
 
 * Theme
-  + [[./org-bigblow/example.html][org-bigblow]] - 来自 [[https://github.com/fniessen/org-html-themes][org-html-themes]] 的主题
-  + [[./org-readtheorg/example.html][org-readthedocs]] - 来自 [[https://github.com/fniessen/org-html-themes][org-html-themes]] 的主题
-  + [[./org-iv/example.html][org-iv]] - 来自 [[https://github.com/dodrio/iv][iv]] 的主题
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-bigblow/example.html][org-bigblow]] - 来自 [[https://github.com/fniessen/org-html-themes][org-html-themes]] 的主题
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-readtheorg/example.html][org-readthedocs]] - 来自 [[https://github.com/fniessen/org-html-themes][org-html-themes]] 的主题
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-iv/example.html][org-iv]] - 来自 [[https://github.com/dodrio/iv][iv]] 的主题
 
 * Style
-  + [[./org/example.html][org]] - 来自 [[https://orgmode.org/][org-mode]] 官网的样式
-  + [[./org-spec/example.html][org-spec]] - 来自 [[https://github.com/thi-ng/org-spec][thi-ng/org-spec]] 的样式
-  + [[./org-note/example.html][org-note]] - 来自 [[https://github.com/ptpt/org-notes-style][ptpt/org-notes-style]] 的样式
-  + [[./org-guidao/example.html][org-guidao]] - 来自 [[https://github.com/guidao][guidao]] 的 [[http://guidao.github.io/][个人网站]] 的样式
-  + [[./org-joshua/example.html][org-joshua]] - 来自 [[http://cse3521.artifice.cc/index.html][Joshua Ecirc]] 的网站的样式
-  + [[./org-norang/example.html][org-norang]] - 来自 [[http://doc.norang.ca/][Norang]] 的网站的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org/example.html][org]] - 来自 [[https://orgmode.org/][org-mode]] 官网的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-spec/example.html][org-spec]] - 来自 [[https://github.com/thi-ng/org-spec][thi-ng/org-spec]] 的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-listttps://rgb-24bit.github.io/org-html-theme-list/org-note/example.html][org-note]] - 来自 [[https://github.com/ptpt/org-notes-style][ptpt/org-notes-style]] 的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-guidao/example.html][org-guidao]] - 来自 [[https://github.com/guidao][guidao]] 的 [[http://guidao.github.io/][个人网站]] 的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-joshua/example.html][org-joshua]] - 来自 [[http://cse3521.artifice.cc/index.html][Joshua Ecirc]] 的网站的样式
+  + [[https://rgb-24bit.github.io/org-html-theme-list/org-norang/example.html][org-norang]] - 来自 [[http://doc.norang.ca/][Norang]] 的网站的样式
 
 * Other
   + [[http://lifegoo.pluskid.org/wiki/css/style.css][星黎殿]] - 链接指向 [[http://lifegoo.pluskid.org/wiki/index.html][星黎殿]] 使用的样式文件
