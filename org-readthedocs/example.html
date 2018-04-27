@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-04-27 周五 14:09 -->
+<!-- 2018-04-27 周五 13:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Org-Mode Reference Card</title>
@@ -180,7 +180,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="style/main.css"/>
+<link rel="stylesheet" type="text/css" href="theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="theme/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="theme/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -235,67 +240,67 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc7572a3">Getting Started</a></li>
-<li><a href="#orged0b48a">Visibility Cycling</a></li>
-<li><a href="#orgb9f8b8c">Motion</a></li>
-<li><a href="#orgf71ee01">Structure Editing</a></li>
-<li><a href="#org1bfdcb2">Capture - Refile - Archiving</a></li>
-<li><a href="#orgee26304">Filtering and Sparse Trees</a></li>
-<li><a href="#org1c798c4">Tables</a>
+<li><a href="#orgeaff64a">Getting Started</a></li>
+<li><a href="#org741b68b">Visibility Cycling</a></li>
+<li><a href="#orgd67a1a3">Motion</a></li>
+<li><a href="#orge01bbae">Structure Editing</a></li>
+<li><a href="#org8a9dbbb">Capture - Refile - Archiving</a></li>
+<li><a href="#orgb718d2d">Filtering and Sparse Trees</a></li>
+<li><a href="#orgc4b5abe">Tables</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org44afef6">Creating a table</a></li>
+<li><a href="#orgff299e1">Creating a table</a></li>
 </ul>
 </li>
-<li><a href="#org91bd3c8">Commands available inside tables</a>
+<li><a href="#orgda1b08e">Commands available inside tables</a>
 <ul>
-<li><a href="#org400d57e">Re-aligning and field motion</a></li>
-<li><a href="#orga3f7367">Row and column editing</a></li>
-<li><a href="#org02580be">Regions</a></li>
-<li><a href="#org1f7f69e">Miscellaneous</a></li>
+<li><a href="#orgfe4e093">Re-aligning and field motion</a></li>
+<li><a href="#org0113354">Row and column editing</a></li>
+<li><a href="#org33d19aa">Regions</a></li>
+<li><a href="#org15de8af">Miscellaneous</a></li>
 </ul>
 </li>
-<li><a href="#org4b78c1c">Tables created with the table.el package</a></li>
-<li><a href="#orgea1b580">Spreadsheet</a></li>
-<li><a href="#orgface31e">Formula Editor</a></li>
+<li><a href="#orgdef7f82">Tables created with the table.el package</a></li>
+<li><a href="#orgb8ed8f6">Spreadsheet</a></li>
+<li><a href="#org68eeae7">Formula Editor</a></li>
 </ul>
 </li>
-<li><a href="#org091591e">Links</a></li>
-<li><a href="#org6c8a853">Working with Code (Babel)</a></li>
-<li><a href="#org378c01e">Completion</a></li>
-<li><a href="#org670ac16"><span class="todo TODO">TODO</span> Items and Checkboxes</a></li>
-<li><a href="#org6332dea">Tags</a></li>
-<li><a href="#orgee12981">Properties and Column View</a></li>
-<li><a href="#orgabd407f">Timestamps</a>
+<li><a href="#orgd3e7705">Links</a></li>
+<li><a href="#org3adeaf0">Working with Code (Babel)</a></li>
+<li><a href="#org8b8f28f">Completion</a></li>
+<li><a href="#orgce3040f"><span class="todo TODO">TODO</span> Items and Checkboxes</a></li>
+<li><a href="#org482316e">Tags</a></li>
+<li><a href="#org96e7c0a">Properties and Column View</a></li>
+<li><a href="#orged8a7a2">Timestamps</a>
 <ul>
-<li><a href="#org8574bdd">Clocking time</a></li>
+<li><a href="#orgbbb6371">Clocking time</a></li>
 </ul>
 </li>
-<li><a href="#org2a2e451">Agenda Views</a>
+<li><a href="#org4830bbf">Agenda Views</a>
 <ul>
-<li><a href="#orgd5e32bc">Commands available in an agenda buffer</a>
+<li><a href="#orgf60c45b">Commands available in an agenda buffer</a>
 <ul>
-<li><a href="#orgeb39b23">View Org file</a></li>
-<li><a href="#org3ffe255">Change display</a></li>
-<li><a href="#orgdcc2ce7">Remote editing</a></li>
-<li><a href="#orgb257acf">Misc</a></li>
-<li><a href="#org810251f">Calendar commands</a></li>
-<li><a href="#org86f6ef0">Quit and Exit</a></li>
+<li><a href="#org0ddab56">View Org file</a></li>
+<li><a href="#org9ca95fa">Change display</a></li>
+<li><a href="#org85b2430">Remote editing</a></li>
+<li><a href="#orgf411810">Misc</a></li>
+<li><a href="#org58bf485">Calendar commands</a></li>
+<li><a href="#org3ca4751">Quit and Exit</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org3fc7c2c">LaTeX and cdlatex-mode</a></li>
-<li><a href="#org7ae59ed">Exporting and Publishing</a></li>
-<li><a href="#org49ff914">Dynamic Blocks</a></li>
+<li><a href="#orged14597">LaTeX and cdlatex-mode</a></li>
+<li><a href="#org65e95a0">Exporting and Publishing</a></li>
+<li><a href="#org7c63a92">Dynamic Blocks</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc7572a3" class="outline-2">
-<h2 id="orgc7572a3">Getting Started</h2>
-<div class="outline-text-2" id="text-orgc7572a3">
+<div id="outline-container-orgeaff64a" class="outline-2">
+<h2 id="orgeaff64a">Getting Started</h2>
+<div class="outline-text-2" id="text-orgeaff64a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -320,9 +325,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orged0b48a" class="outline-2">
-<h2 id="orged0b48a">Visibility Cycling</h2>
-<div class="outline-text-2" id="text-orged0b48a">
+<div id="outline-container-org741b68b" class="outline-2">
+<h2 id="org741b68b">Visibility Cycling</h2>
+<div class="outline-text-2" id="text-org741b68b">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -367,9 +372,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgb9f8b8c" class="outline-2">
-<h2 id="orgb9f8b8c">Motion</h2>
-<div class="outline-text-2" id="text-orgb9f8b8c">
+<div id="outline-container-orgd67a1a3" class="outline-2">
+<h2 id="orgd67a1a3">Motion</h2>
+<div class="outline-text-2" id="text-orgd67a1a3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -414,9 +419,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf71ee01" class="outline-2">
-<h2 id="orgf71ee01">Structure Editing</h2>
-<div class="outline-text-2" id="text-orgf71ee01">
+<div id="outline-container-orge01bbae" class="outline-2">
+<h2 id="orge01bbae">Structure Editing</h2>
+<div class="outline-text-2" id="text-orge01bbae">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -511,9 +516,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1bfdcb2" class="outline-2">
-<h2 id="org1bfdcb2">Capture - Refile - Archiving</h2>
-<div class="outline-text-2" id="text-org1bfdcb2">
+<div id="outline-container-org8a9dbbb" class="outline-2">
+<h2 id="org8a9dbbb">Capture - Refile - Archiving</h2>
+<div class="outline-text-2" id="text-org8a9dbbb">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -563,9 +568,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgee26304" class="outline-2">
-<h2 id="orgee26304">Filtering and Sparse Trees</h2>
-<div class="outline-text-2" id="text-orgee26304">
+<div id="outline-container-orgb718d2d" class="outline-2">
+<h2 id="orgb718d2d">Filtering and Sparse Trees</h2>
+<div class="outline-text-2" id="text-orgb718d2d">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -605,13 +610,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1c798c4" class="outline-2">
-<h2 id="org1c798c4">Tables</h2>
-<div class="outline-text-2" id="text-org1c798c4">
+<div id="outline-container-orgc4b5abe" class="outline-2">
+<h2 id="orgc4b5abe">Tables</h2>
+<div class="outline-text-2" id="text-orgc4b5abe">
 </div>
-<div id="outline-container-org44afef6" class="outline-4">
-<h4 id="org44afef6">Creating a table</h4>
-<div class="outline-text-4" id="text-org44afef6">
+<div id="outline-container-orgff299e1" class="outline-4">
+<h4 id="orgff299e1">Creating a table</h4>
+<div class="outline-text-4" id="text-orgff299e1">
 <ul class="org-ul">
 <li><code>C-c |</code>: convert region to table</li>
 <li><code>C-3 C-c |</code> : separator at least 3 spaces</li>
@@ -619,18 +624,18 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org91bd3c8" class="outline-3">
-<h3 id="org91bd3c8">Commands available inside tables</h3>
-<div class="outline-text-3" id="text-org91bd3c8">
+<div id="outline-container-orgda1b08e" class="outline-3">
+<h3 id="orgda1b08e">Commands available inside tables</h3>
+<div class="outline-text-3" id="text-orgda1b08e">
 <p>
 The following commands work when the cursor is inside a table.  Outside of
 tables, the same keys may have other functionality.
 </p>
 </div>
 
-<div id="outline-container-org400d57e" class="outline-4">
-<h4 id="org400d57e">Re-aligning and field motion</h4>
-<div class="outline-text-4" id="text-org400d57e">
+<div id="outline-container-orgfe4e093" class="outline-4">
+<h4 id="orgfe4e093">Re-aligning and field motion</h4>
+<div class="outline-text-4" id="text-orgfe4e093">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -675,9 +680,9 @@ tables, the same keys may have other functionality.
 </div>
 </div>
 
-<div id="outline-container-orga3f7367" class="outline-4">
-<h4 id="orga3f7367">Row and column editing</h4>
-<div class="outline-text-4" id="text-orga3f7367">
+<div id="outline-container-org0113354" class="outline-4">
+<h4 id="org0113354">Row and column editing</h4>
+<div class="outline-text-4" id="text-org0113354">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -742,9 +747,9 @@ tables, the same keys may have other functionality.
 </div>
 </div>
 
-<div id="outline-container-org02580be" class="outline-4">
-<h4 id="org02580be">Regions</h4>
-<div class="outline-text-4" id="text-org02580be">
+<div id="outline-container-org33d19aa" class="outline-4">
+<h4 id="org33d19aa">Regions</h4>
+<div class="outline-text-4" id="text-org33d19aa">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -774,9 +779,9 @@ tables, the same keys may have other functionality.
 </div>
 </div>
 
-<div id="outline-container-org1f7f69e" class="outline-4">
-<h4 id="org1f7f69e">Miscellaneous</h4>
-<div class="outline-text-4" id="text-org1f7f69e">
+<div id="outline-container-org15de8af" class="outline-4">
+<h4 id="org15de8af">Miscellaneous</h4>
+<div class="outline-text-4" id="text-org15de8af">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -826,9 +831,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-org4b78c1c" class="outline-3">
-<h3 id="org4b78c1c">Tables created with the table.el package</h3>
-<div class="outline-text-3" id="text-org4b78c1c">
+<div id="outline-container-orgdef7f82" class="outline-3">
+<h3 id="orgdef7f82">Tables created with the table.el package</h3>
+<div class="outline-text-3" id="text-orgdef7f82">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -863,9 +868,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-orgea1b580" class="outline-3">
-<h3 id="orgea1b580">Spreadsheet</h3>
-<div class="outline-text-3" id="text-orgea1b580">
+<div id="outline-container-orgb8ed8f6" class="outline-3">
+<h3 id="orgb8ed8f6">Spreadsheet</h3>
+<div class="outline-text-3" id="text-orgb8ed8f6">
 <ul class="org-ul">
 <li>Formulas typed in field are executed by <code>TAB</code>, <code>RET</code> and <code>C-c C-c</code>.</li>
 <li><code>=</code> introduces a column formula, <code>:=</code> a field formula.</li>
@@ -939,9 +944,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-orgface31e" class="outline-3">
-<h3 id="orgface31e">Formula Editor</h3>
-<div class="outline-text-3" id="text-orgface31e">
+<div id="outline-container-org68eeae7" class="outline-3">
+<h3 id="org68eeae7">Formula Editor</h3>
+<div class="outline-text-3" id="text-org68eeae7">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1017,9 +1022,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-org091591e" class="outline-2">
-<h2 id="org091591e">Links</h2>
-<div class="outline-text-2" id="text-org091591e">
+<div id="outline-container-orgd3e7705" class="outline-2">
+<h2 id="orgd3e7705">Links</h2>
+<div class="outline-text-2" id="text-orgd3e7705">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1109,9 +1114,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-org6c8a853" class="outline-2">
-<h2 id="org6c8a853">Working with Code (Babel)</h2>
-<div class="outline-text-2" id="text-org6c8a853">
+<div id="outline-container-org3adeaf0" class="outline-2">
+<h2 id="org3adeaf0">Working with Code (Babel)</h2>
+<div class="outline-text-2" id="text-org3adeaf0">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1236,9 +1241,9 @@ To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </div>
 </div>
 
-<div id="outline-container-org378c01e" class="outline-2">
-<h2 id="org378c01e">Completion</h2>
-<div class="outline-text-2" id="text-org378c01e">
+<div id="outline-container-org8b8f28f" class="outline-2">
+<h2 id="org8b8f28f">Completion</h2>
+<div class="outline-text-2" id="text-org8b8f28f">
 <p>
 In-buffer completion completes TODO keywords at headline start, TeX macros
 after `\', option keywords after `#-', TAGS after `:', and dictionary words
@@ -1269,9 +1274,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org670ac16" class="outline-2">
-<h2 id="org670ac16"><span class="todo TODO">TODO</span> Items and Checkboxes</h2>
-<div class="outline-text-2" id="text-org670ac16">
+<div id="outline-container-orgce3040f" class="outline-2">
+<h2 id="orgce3040f"><span class="todo TODO">TODO</span> Items and Checkboxes</h2>
+<div class="outline-text-2" id="text-orgce3040f">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1356,9 +1361,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org6332dea" class="outline-2">
-<h2 id="org6332dea">Tags</h2>
-<div class="outline-text-2" id="text-org6332dea">
+<div id="outline-container-org482316e" class="outline-2">
+<h2 id="org482316e">Tags</h2>
+<div class="outline-text-2" id="text-org482316e">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1398,9 +1403,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-orgee12981" class="outline-2">
-<h2 id="orgee12981">Properties and Column View</h2>
-<div class="outline-text-2" id="text-orgee12981">
+<div id="outline-container-org96e7c0a" class="outline-2">
+<h2 id="org96e7c0a">Properties and Column View</h2>
+<div class="outline-text-2" id="text-org96e7c0a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1490,9 +1495,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-orgabd407f" class="outline-2">
-<h2 id="orgabd407f">Timestamps</h2>
-<div class="outline-text-2" id="text-orgabd407f">
+<div id="outline-container-orged8a7a2" class="outline-2">
+<h2 id="orged8a7a2">Timestamps</h2>
+<div class="outline-text-2" id="text-orged8a7a2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1581,9 +1586,9 @@ elsewhere.
 </table>
 </div>
 
-<div id="outline-container-org8574bdd" class="outline-3">
-<h3 id="org8574bdd">Clocking time</h3>
-<div class="outline-text-3" id="text-org8574bdd">
+<div id="outline-container-orgbbb6371" class="outline-3">
+<h3 id="orgbbb6371">Clocking time</h3>
+<div class="outline-text-3" id="text-orgbbb6371">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1629,9 +1634,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org2a2e451" class="outline-2">
-<h2 id="org2a2e451">Agenda Views</h2>
-<div class="outline-text-2" id="text-org2a2e451">
+<div id="outline-container-org4830bbf" class="outline-2">
+<h2 id="org4830bbf">Agenda Views</h2>
+<div class="outline-text-2" id="text-org4830bbf">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1715,13 +1720,13 @@ elsewhere.
 </table>
 </div>
 
-<div id="outline-container-orgd5e32bc" class="outline-3">
-<h3 id="orgd5e32bc">Commands available in an agenda buffer</h3>
-<div class="outline-text-3" id="text-orgd5e32bc">
+<div id="outline-container-orgf60c45b" class="outline-3">
+<h3 id="orgf60c45b">Commands available in an agenda buffer</h3>
+<div class="outline-text-3" id="text-orgf60c45b">
 </div>
-<div id="outline-container-orgeb39b23" class="outline-4">
-<h4 id="orgeb39b23">View Org file</h4>
-<div class="outline-text-4" id="text-orgeb39b23">
+<div id="outline-container-org0ddab56" class="outline-4">
+<h4 id="org0ddab56">View Org file</h4>
+<div class="outline-text-4" id="text-org0ddab56">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1771,9 +1776,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org3ffe255" class="outline-4">
-<h4 id="org3ffe255">Change display</h4>
-<div class="outline-text-4" id="text-org3ffe255">
+<div id="outline-container-org9ca95fa" class="outline-4">
+<h4 id="org9ca95fa">Change display</h4>
+<div class="outline-text-4" id="text-org9ca95fa">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1853,9 +1858,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-orgdcc2ce7" class="outline-4">
-<h4 id="orgdcc2ce7">Remote editing</h4>
-<div class="outline-text-4" id="text-orgdcc2ce7">
+<div id="outline-container-org85b2430" class="outline-4">
+<h4 id="org85b2430">Remote editing</h4>
+<div class="outline-text-4" id="text-org85b2430">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1960,9 +1965,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-orgb257acf" class="outline-4">
-<h4 id="orgb257acf">Misc</h4>
-<div class="outline-text-4" id="text-orgb257acf">
+<div id="outline-container-orgf411810" class="outline-4">
+<h4 id="orgf411810">Misc</h4>
+<div class="outline-text-4" id="text-orgf411810">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1987,9 +1992,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org810251f" class="outline-4">
-<h4 id="org810251f">Calendar commands</h4>
-<div class="outline-text-4" id="text-org810251f">
+<div id="outline-container-org58bf485" class="outline-4">
+<h4 id="org58bf485">Calendar commands</h4>
+<div class="outline-text-4" id="text-org58bf485">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2039,9 +2044,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org86f6ef0" class="outline-4">
-<h4 id="org86f6ef0">Quit and Exit</h4>
-<div class="outline-text-4" id="text-org86f6ef0">
+<div id="outline-container-org3ca4751" class="outline-4">
+<h4 id="org3ca4751">Quit and Exit</h4>
+<div class="outline-text-4" id="text-org3ca4751">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2073,9 +2078,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org3fc7c2c" class="outline-2">
-<h2 id="org3fc7c2c">LaTeX and cdlatex-mode</h2>
-<div class="outline-text-2" id="text-org3fc7c2c">
+<div id="outline-container-orged14597" class="outline-2">
+<h2 id="orged14597">LaTeX and cdlatex-mode</h2>
+<div class="outline-text-2" id="text-orged14597">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2115,9 +2120,9 @@ elsewhere.
 </div>
 </div>
 
-<div id="outline-container-org7ae59ed" class="outline-2">
-<h2 id="org7ae59ed">Exporting and Publishing</h2>
-<div class="outline-text-2" id="text-org7ae59ed">
+<div id="outline-container-org65e95a0" class="outline-2">
+<h2 id="org65e95a0">Exporting and Publishing</h2>
+<div class="outline-text-2" id="text-org65e95a0">
 <p>
 Exporting creates files with extensions .txt and .html in the current
 directory. Publishing puts the resulting file into some other place.
@@ -2167,8 +2172,8 @@ directory. Publishing puts the resulting file into some other place.
 </div>
 
 <ul class="org-ul">
-<li><a id="orgca1257b"></a>Comments: Text not being exported<br />
-<div class="outline-text-5" id="text-orgca1257b">
+<li><a id="org8532fd5"></a>Comments: Text not being exported<br />
+<div class="outline-text-5" id="text-org8532fd5">
 <p>
 Lines starting with # and subtrees starting with <code>COMMENT</code> are never
 exported.
@@ -2200,9 +2205,9 @@ exported.
 </ul>
 </div>
 
-<div id="outline-container-org49ff914" class="outline-2">
-<h2 id="org49ff914">Dynamic Blocks</h2>
-<div class="outline-text-2" id="text-org49ff914">
+<div id="outline-container-org7c63a92" class="outline-2">
+<h2 id="org7c63a92">Dynamic Blocks</h2>
+<div class="outline-text-2" id="text-org7c63a92">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2234,7 +2239,7 @@ exported.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Vikas Rawal</p>
-<p class="date">Created: 2018-04-27 周五 14:09</p>
+<p class="date">Created: 2018-04-27 周五 13:53</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

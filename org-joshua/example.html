@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-31 周六 16:13 -->
+<!-- 2018-04-27 周五 14:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing Org-mode files to HTML</title>
+<title>Org-Mode Reference Card</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="Sebastian Rose" />
+<meta name="author" content="Vikas Rawal" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -180,7 +180,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://rgb-24bit.github.io/org-html-theme-list/org-joshua/main.css"/>
+<link rel="stylesheet" type="text/css" href="style/main.css"/>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -227,264 +227,75 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing Org-mode files to HTML</h1>
+<h1 class="title">Org-Mode Reference Card</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7c826bf">Introduction</a></li>
-<li><a href="#orgd55afaa">Basics</a></li>
-<li><a href="#orgfa8780b">Publishing the <i>org</i> project</a>
+<li><a href="#org0fcc1ef">Getting Started</a></li>
+<li><a href="#orgf07a7b2">Visibility Cycling</a></li>
+<li><a href="#org7394184">Motion</a></li>
+<li><a href="#org6f81d96">Structure Editing</a></li>
+<li><a href="#org8100f86">Capture - Refile - Archiving</a></li>
+<li><a href="#orgd845797">Filtering and Sparse Trees</a></li>
+<li><a href="#orgadff934">Tables</a>
 <ul>
-<li><a href="#orgf773d47">The <i>notes</i> component</a></li>
-<li><a href="#org1653d5f">The <i>static</i> component</a></li>
-<li><a href="#org36d5f8e">The <i>publish</i> component</a></li>
-<li><a href="#org2f436a8">Pooh - can we publish now?</a></li>
+<li>
+<ul>
+<li><a href="#org8c0273a">Creating a table</a></li>
 </ul>
 </li>
-<li><a href="#org00a7e09">Adding directories</a></li>
-<li><a href="#org7234cee">Overwrite the defaults</a>
+<li><a href="#orgeeaffc3">Commands available inside tables</a>
 <ul>
-<li><a href="#orged95f97">The export options template</a></li>
-<li><a href="#orgf2f24e5">Special comment section</a></li>
+<li><a href="#org72cbe2e">Re-aligning and field motion</a></li>
+<li><a href="#orga3b41c0">Row and column editing</a></li>
+<li><a href="#orgbada012">Regions</a></li>
+<li><a href="#org8db36ef">Miscellaneous</a></li>
 </ul>
 </li>
-<li><a href="#org6c1cf89">Tired of export templates?</a>
-<ul>
-<li><a href="#org4673d82">More level files</a></li>
+<li><a href="#orgf84d44f">Tables created with the table.el package</a></li>
+<li><a href="#org3b2e758">Spreadsheet</a></li>
+<li><a href="#org2f34e0a">Formula Editor</a></li>
 </ul>
 </li>
-<li><a href="#orgd00e6c2">More Projects</a>
+<li><a href="#orgc57714c">Links</a></li>
+<li><a href="#org3008612">Working with Code (Babel)</a></li>
+<li><a href="#orgb21705a">Completion</a></li>
+<li><a href="#org9a6194b"><span class="todo TODO">TODO</span> Items and Checkboxes</a></li>
+<li><a href="#orgcf1fdca">Tags</a></li>
+<li><a href="#org7b8070c">Properties and Column View</a></li>
+<li><a href="#orgf354734">Timestamps</a>
 <ul>
-<li><a href="#orge0385b2">The <i>inherit</i> component</a>
+<li><a href="#org1e56aca">Clocking time</a></li>
+</ul>
+</li>
+<li><a href="#org16888c0">Agenda Views</a>
 <ul>
-<li><a href="#org739ec87">One more Example</a></li>
+<li><a href="#org49491c4">Commands available in an agenda buffer</a>
+<ul>
+<li><a href="#orge5cc817">View Org file</a></li>
+<li><a href="#orgf24df41">Change display</a></li>
+<li><a href="#org850364f">Remote editing</a></li>
+<li><a href="#org7011c8b">Misc</a></li>
+<li><a href="#orgcbbf549">Calendar commands</a></li>
+<li><a href="#orgb2d82be">Quit and Exit</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga54b2f1">Overview</a>
-<ul>
-<li><a href="#org10111e0">The sitemap</a></li>
-<li><a href="#org61d11cb">org-info.js</a></li>
-</ul>
-</li>
-<li><a href="#org1bf146b">Special symbols</a></li>
-<li><a href="#org70c7106">Further reading</a></li>
+<li><a href="#orgd54a09e">LaTeX and cdlatex-mode</a></li>
+<li><a href="#org32ab37a">Exporting and Publishing</a></li>
+<li><a href="#org8686192">Dynamic Blocks</a></li>
 </ul>
 </div>
 </div>
-<p>
-{Back to Worg's index}
-</p>
 
-<div id="outline-container-org7c826bf" class="outline-2">
-<h2 id="org7c826bf">Introduction</h2>
-<div class="outline-text-2" id="text-org7c826bf">
-<p>
-This Tutorial describes one of many ways to publishing Org-mode files to
-XHTML. We use the publishing mechanism to keep the <code>*.html</code> files separated
-from our <code>*.org</code> files and to access them via web browser. Simply exporting the
-Org-mode files to HTML would leave them in <code>~/org/</code>.
-</p>
-
-<p>
-The XHTML files we create will work every where, on any host, with or without
-network access, and even when accessed through the <code>file:///</code> protocol. To
-achieve this goal, we use
-</p>
-
-<ul class="org-ul">
-<li>no absolute paths in HTML,</li>
-<li>no server side scripting to navigate our output directories,</li>
-<li>no <code>base</code> element (which is optional as of XHTML 1.0 strict) and</li>
-<li>no software, but emacs, Org-mode and a web browser.</li>
-</ul>
-
-<p>
-All this means, we are able to check and use the result of work immediately,
-everywhere.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgd55afaa" class="outline-2">
-<h2 id="orgd55afaa">Basics</h2>
-<div class="outline-text-2" id="text-orgd55afaa">
-<p>
-Throughout this tutorial, let's assume that all our Org-mode files live beneath
-<code>~/org/</code> and we publish them to <code>~/public_html/</code>.
-</p>
-
-<p>
-Let's further assume you're already familiar with the note taking basics in
-org and able to add a little content to the Org-mode files we add to our project
-during this tutorial. Please add at least one headline to each of the files.
-</p>
-
-<p>
-The first thing to do is to create the folder <code>~/org</code>. This is where our notes
-files live. Inside <code>~/org/</code> we have a folder <code>css/</code> for stylesheets and
-scripts, and a folder called <code>img/</code> (guess what's in there).
-</p>
-
-<p>
-The first file we add to that folder (and to subdirectories later on) is called
-<code>index.org</code>. This name was choosen, since Org will publish the files to those
-with the basename of the source file plus the extension <code>.html</code> <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Thus
-<code>~/org/index.org</code> will once be <code>~/public_html/index.html</code> &#x2013; the startpage.
-</p>
-
-<p>
-Let's add another file and call it <code>~/org/remember.org</code>. After adding a
-stylesheet, <code>~/org/</code> looks like this:
-</p>
-
-<pre class="example">
-~/org/
-   |- css/
-   |  `- stylesheet.css
-   |- img/
-   |- index.org
-   `- remember.org
-
-</pre>
-
-<p>
-When ever you want to add link to a file, do it the usual way. To link from
-<code>index.org</code> to <code>remember.org</code>, just write
-</p>
-<pre class="example">
-[[file:remember.org][remember]]
-
-</pre>
-<p>
-Org will convert those links to HTML links for you on export:
-</p>
-<pre class="example">
-&lt;a href="./remember.html"&gt;remember&lt;/a&gt;
-
-</pre>
-
-<p>
-Same is true for images. To add an image, put it in <code>~/org/img/test.jpg</code> and
-refer to it by
-</p>
-<pre class="example">
-[[file:img/test.jpg]]
-
-</pre>
-
-<p>
-You may test your links by clicking on them. To test image links you may also
-try to turn on <code>iimage-mode</code> <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> which works without problems here.
-</p>
-
-<p>
-Optionally, set up the stylesheet as shown in section <a href="#orgf52c941">Special comment
-section</a>. The recommended way is to use a real stylesheet though.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgfa8780b" class="outline-2">
-<h2 id="orgfa8780b">Publishing the <i>org</i> project</h2>
-<div class="outline-text-2" id="text-orgfa8780b">
-<p>
-To publish the <code>~/org/</code> project to HTML, we'll have to setup the variable
-<code>org-publish-project-alist</code> <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.  I tend to split each project in three basic
-<i>components</i> as described in the manual. We need these different components,
-since we want org to use two different functions to publish dynamic content
-(org =&gt; html) and static content like scripts, images, stylesheets or even
-.htaccess files (org =&gt; copy). The third component is just for convenience and
-tells org to execute the former ones.
-</p>
-
-<p>
-<code>org-publish-project-alist</code> may be adjusted using customize (<code>M-x
-  customize-variable RET org-publish-project-alist RET</code>), but I prefere to
-use an extra file to setup my projects, since there are quite a few. To follow
-this tutorial use the <code>*scratch*</code> buffer and put all the Lisp in this section
-in there.
-</p>
-
-<p>
-First of all, enter this into the <code>*scratch*</code> buffer:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #859900;">require</span> '<span style="color: #268bd2;">ox-publish</span><span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #859900;">setq</span> org-publish-project-alist
-      '<span style="color: #2aa198;">(</span>
-
-       <span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... add all the components here (see below)...</span>
-
-      <span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-</pre>
-</div>
-
-<p>
-Be sure to put all the <i>components</i> below right there where the comment line
-is now.
-</p>
-</div>
-
-<div id="outline-container-orgf773d47" class="outline-3">
-<h3 id="orgf773d47">The <i>notes</i> component</h3>
-<div class="outline-text-3" id="text-orgf773d47">
-<p>
-The <i>notes</i> component publishes all the Org-mode files to HTML. Hence the
-<code>publishing-function</code> is set to <code>org-publish-org-to-html</code>. Here is an example
-of the notes component:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org-notes"</span>
- <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
- <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
- <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/"</span>
- <span style="color: #6c71c4;">:recursive</span> t
- <span style="color: #6c71c4;">:publishing-function</span> org-html-publish-to-html
- <span style="color: #6c71c4;">:headline-levels</span> <span style="color: #268bd2;">4</span>             <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">Just the default for this project.</span>
- <span style="color: #6c71c4;">:auto-preamble</span> t
- <span style="color: #839496;">)</span>
-</pre>
-</div>
-
-<p>
-Note, that <code>headline-levels</code> may be adjusted on a per file basis to overwrite
-the default.
-</p>
-
-<p>
-The most important settings here are:
-</p>
-
+<div id="outline-container-org0fcc1ef" class="outline-2">
+<h2 id="org0fcc1ef">Getting Started</h2>
+<div class="outline-text-2" id="text-org0fcc1ef">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -493,577 +304,576 @@ The most important settings here are:
 
 <col  class="org-left" />
 </colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="org-left"><code>base-directory</code></td>
-<td class="org-left">The components root directory.</td>
-</tr>
-
-<tr>
-<td class="org-left"><code>base-extension</code></td>
-<td class="org-left">Filename suffix without the dot.</td>
-</tr>
-
-<tr>
-<td class="org-left"><code>publishing-directory</code></td>
-<td class="org-left">The base directory where all our files will be published.</td>
-</tr>
-
-<tr>
-<td class="org-left"><code>recursive</code></td>
-<td class="org-left">If <code>t</code>, include subdirectories - we want that. Subdirectories in <code>:publishing-directory</code> are created if they don't yet exist.</td>
-</tr>
-
-<tr>
-<td class="org-left"><code>publishing-function</code></td>
-<td class="org-left">If and how org should process the files in this component. In this case: convert the Org-mode files to HTML.</td>
+<td class="org-left"><code>M-x org-info</code></td>
+<td class="org-left">To read the on-line documentation try</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org1653d5f" class="outline-3">
-<h3 id="org1653d5f">The <i>static</i> component</h3>
-<div class="outline-text-3" id="text-org1653d5f">
-<p>
-The <i>static</i> component just copies files (and their folders) from
-<code>:base-directory</code> to <code>:publishing-directory</code> without changing them. Thus
-let's tell Org-mode to use the function <code>org-publish-attachment</code>:
-</p>
+<div id="outline-container-orgf07a7b2" class="outline-2">
+<h2 id="orgf07a7b2">Visibility Cycling</h2>
+<div class="outline-text-2" id="text-orgf07a7b2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org-static"</span>
- <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
- <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">png</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">gif</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">swf"</span>
- <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/"</span>
- <span style="color: #6c71c4;">:recursive</span> t
- <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment
- <span style="color: #839496;">)</span>
-</pre>
-</div>
 
-<p>
-<b>Note</b> that <code>:publishing-function</code> is set to <code>org-publish-attachment</code>.
-</p>
-</div>
-</div>
+<colgroup>
+<col  class="org-left" />
 
-<div id="outline-container-org36d5f8e" class="outline-3">
-<h3 id="org36d5f8e">The <i>publish</i> component</h3>
-<div class="outline-text-3" id="text-org36d5f8e">
-<p>
-To publish all with one command, we add the <i>publish</i> component. For this
-component I usually drop the suffix and just use the basename of the
-project.
-</p>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">rotate current subtree between states</td>
+</tr>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"org"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"org-notes"</span> <span style="color: #2aa198;">"org-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-</pre>
-</div>
+<tr>
+<td class="org-left"><code>S-TAB</code></td>
+<td class="org-left">rotate entire buffer between states</td>
+</tr>
 
-<p>
-Now <code>M-x org-publish-project RET org RET</code> publishes everything
-recursively to <code>~/public_html/</code>. Target directories are created, if they
-don't yet exist.
-</p>
-</div>
-</div>
+<tr>
+<td class="org-left"><code>C-u C-u TAB</code></td>
+<td class="org-left">restore property-dependent startup visibility</td>
+</tr>
 
-<div id="outline-container-org2f436a8" class="outline-3">
-<h3 id="org2f436a8">Pooh - can we publish now?</h3>
-<div class="outline-text-3" id="text-org2f436a8">
-<p>
-The good message is <b>yes, we can</b>. Just one little hump. Since we've put the
-definition for our publishing components in the <code>*scratch*</code> buffer, again,
-make sure all the <i>components</i> are enclosed by the lines
-</p>
+<tr>
+<td class="org-left"><code>C-u C-u C-u TAB</code></td>
+<td class="org-left">show the whole file, including drawers</td>
+</tr>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #859900;">require</span> '<span style="color: #268bd2;">org-publish</span><span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #859900;">setq</span> org-publish-project-alist
-      '<span style="color: #2aa198;">(</span>
-
-       <span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... all the components ...</span>
-
-      <span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-</pre>
-</div>
-
-<p>
-Move to the end of the first line and press <code>C-x C-e</code> to load
-<code>org-publish</code>. Now go to the end of the last line and press <code>C-x C-e</code>
-again. Repeat the last step after every change to your
-<code>org-publish-project-alist</code>.
-</p>
-
-<p>
-To publish your Org-mode files just type
-<code>M-x org-publish-project RET org RET</code> or use one of the shortcuts listed in
-the manual. If nothing went wrong, you should now be able to point your
-browser to <a href="http://localhost/~user/">http://localhost/~user/</a>, if <code>mod_userdir</code> is set up. If
-not, simply navigate to <a href="file:///e:/home/user/public_html">file:///e:/home/user/public_html</a> (you might use
-<i>file -&gt; open</i> from the file menu of your browser.
-</p>
-</div>
+<tr>
+<td class="org-left"><code>C-c C-r</code></td>
+<td class="org-left">reveal context around point</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<div id="outline-container-org00a7e09" class="outline-2">
-<h2 id="org00a7e09">Adding directories</h2>
-<div class="outline-text-2" id="text-org00a7e09">
-<p>
-As we add more and more files to <code>~/org/</code>, we will soon end up with filenames
-like '<code>networking-ssh-sshd-config.org</code>' or longer. What we need is a
-directory structure:
-</p>
+<div id="outline-container-org7394184" class="outline-2">
+<h2 id="org7394184">Motion</h2>
+<div class="outline-text-2" id="text-org7394184">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<pre class="example">
-~/org/
-  |- css/
-  |  `- stylesheet.css
-  |- Emacs
-  |  |- index.org
-  |  |- gnus.org
-  |  |- org.org
-  |  `- snippets.org
-  |- img/
-  |- index.org
-  `- remember.org
 
-</pre>
+<colgroup>
+<col  class="org-left" />
 
-<p>
-If we hadn't added
-</p>
-<pre class="example">
-:recursive t
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-n/p</code></td>
+<td class="org-left">next/previous heading</td>
+</tr>
 
-</pre>
-<p>
-in the <i>notes</i> and <i>static</i> components already, we would have to do it now at
-the latest to export the subdirectories too.
-</p>
+<tr>
+<td class="org-left"><code>C-c C-f/b</code></td>
+<td class="org-left">next/previous heading, same level</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-u</code></td>
+<td class="org-left">backward to higher level heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-j</code></td>
+<td class="org-left">jump to another place in document</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">previous/next plain list item</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<div id="outline-container-org7234cee" class="outline-2">
-<h2 id="org7234cee">Overwrite the defaults</h2>
-<div class="outline-text-2" id="text-org7234cee">
-<p>
-The defaults set by <code>org-publish-project-alist</code> may be overwritten. You might
-want to justify the export properties for single files. Be it the level of
-headlines, include extry scripts or different stylesheets. Org offers ways to adjust
-the settings for a single file.
-</p>
-</div>
+<div id="outline-container-org6f81d96" class="outline-2">
+<h2 id="org6f81d96">Structure Editing</h2>
+<div class="outline-text-2" id="text-org6f81d96">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div id="outline-container-orged95f97" class="outline-3">
-<h3 id="orged95f97">The export options template</h3>
-<div class="outline-text-3" id="text-orged95f97">
-<p>
-The first choice is the <i>export options template</i> on top of the file. When in
-an Org-mode file, you may insert basic information using <code>C-c C-e #</code>
-(<code>org-export-dispatch</code>) plus "template".  You will be prompted for a template
-choice.  "default" will provide a template for common options, and "html"
-will provide a template for HTML-specific options.
-</p>
 
-<p>
-WARNING: Do <b>not</b> copy lines from the sample output below into your
-files. The template might change from release to release. Instead,
-insert a template as above and delete any entries that are not
-applicable.
-</p>
+<colgroup>
+<col  class="org-left" />
 
-<p>
-The default option inserts the following lines:
-</p>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-RET</code></td>
+<td class="org-left">insert new heading/item at current level</td>
+</tr>
 
-<pre class="example">
-#+TITLE: filename with the extension omitted
-#+DATE: &lt;2013-06-04 Tue&gt;
-#+AUTHOR: Your name
-#+EMAIL: Your email address
-#+OPTIONS: ':t *:t -:t ::t &lt;:t H:3 \n:nil ^:t arch:headline author:t c:nil
-#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
-#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
-#+OPTIONS: todo:t |:t
-#+CREATOR: Emacs 24.3.50.3 (Org mode 8.0.3)
-#+DESCRIPTION:
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS:
-#+LANGUAGE: en
-#+SELECT_TAGS: export
+<tr>
+<td class="org-left"><code>C-RET</code></td>
+<td class="org-left">insert new heading after subtree</td>
+</tr>
 
-</pre>
+<tr>
+<td class="org-left"><code>M-S-RET</code></td>
+<td class="org-left">insert new TODO entry/checkbox item</td>
+</tr>
 
-<p>
-and the html option will add the following:
-</p>
+<tr>
+<td class="org-left"><code>C-S-RET</code></td>
+<td class="org-left">insert TODO entry/ckbx after subtree</td>
+</tr>
 
-<pre class="example">
-#+OPTIONS: html-postamble:auto html-preamble:t tex:t
-#+CREATOR: &lt;a href="http://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; 24.3.50.3 (&lt;a href="https://orgmode.org"&gt;Org&lt;/a&gt; mode 8.0.3)
-#+HTML_CONTAINER: div
-#+HTML_DOCTYPE: xhtml-strict
-#+HTML_HEAD:
-#+HTML_HEAD_EXTRA:
-#+HTML_HTML5_FANCY:
-#+HTML_INCLUDE_SCRIPTS:
-#+HTML_INCLUDE_STYLE:
-#+HTML_LINK_HOME:
-#+HTML_LINK_UP:
-#+HTML_MATHJAX:
-#+INFOJS_OPT:
+<tr>
+<td class="org-left"><code>C-c -</code></td>
+<td class="org-left">turn (head)line into item, cycle item type</td>
+</tr>
 
-</pre>
+<tr>
+<td class="org-left"><code>C-c *</code></td>
+<td class="org-left">turn item/line into headline</td>
+</tr>
 
-<p>
-All we have to do now is to alter the options to match our needs. All the
-options are listed in the wonderful Org-mode manual. Note though, that these
-options are only parsed on startup (i.e., when you first open the file). To
-explicitly apply your new options move on any of those lines and press <code>C-c</code>
-twice.
-</p>
-</div>
-</div>
+<tr>
+<td class="org-left"><code>M-LEFT/RIGHT</code></td>
+<td class="org-left">promote/demote heading</td>
+</tr>
 
-<div id="outline-container-orgf2f24e5" class="outline-3">
-<h3 id="orgf2f24e5"><a id="orgf52c941">Special comment section</a></h3>
-<div class="outline-text-3" id="text-orgf2f24e5">
-<p>
-Also, CSS style variables may be using a special section may be
-#insert/appended to Org-mode files:
-</p>
+<tr>
+<td class="org-left"><code>M-S-LEFT/RIGHT</code></td>
+<td class="org-left">promote/demote current subtree</td>
+</tr>
 
-<pre class="example">
-* COMMENT html style specifications
+<tr>
+<td class="org-left"><code>M-S-UP/DOWN</code></td>
+<td class="org-left">move subtree/list item up/down</td>
+</tr>
 
-# Local Variables:
-# org-export-html-style: "&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"css/stylesheet.css\" /&gt;"
-# End:
+<tr>
+<td class="org-left"><code>C-c ^</code></td>
+<td class="org-left">sort subtree/region/plain-list</td>
+</tr>
 
-</pre>
+<tr>
+<td class="org-left"><code>C-c C-x c</code></td>
+<td class="org-left">clone a subtree</td>
+</tr>
 
-<p>
-<code>css/stylesheet.css</code> suits the needs for a file in the root folder. Use <br />
-<code>../css/stylesheet.css</code> in a subfolder (first level), <br />
-<code>../../css/stylesheet.css</code> for a file in a sub-sub-folder.
-</p>
-</div>
+<tr>
+<td class="org-left"><code>C-c C-x v</code></td>
+<td class="org-left">copy visible text</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-w/M-w</code></td>
+<td class="org-left">kill/copy subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-y or C-y</code></td>
+<td class="org-left">yank subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x n s/w</code></td>
+<td class="org-left">narrow buffer to subtree / widen</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<div id="outline-container-org6c1cf89" class="outline-2">
-<h2 id="org6c1cf89">Tired of export templates?</h2>
-<div class="outline-text-2" id="text-org6c1cf89">
-<p>
-If you're like me, you will soon get tired of adding the same export options
-template to numerous files and adjust the title and paths in it. Luckily,
-Org-mode supports laziness and offers an additional way to set up files. All
-we need is a directory (e.g. <code>~/.emacs.d/org-templates/</code>) and create the
-following files there:
-</p>
+<div id="outline-container-org8100f86" class="outline-2">
+<h2 id="org8100f86">Capture - Refile - Archiving</h2>
+<div class="outline-text-2" id="text-org8100f86">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c c</code></td>
+<td class="org-left">capture a new item (C-u C-u = goto last)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-w</code></td>
+<td class="org-left">refile subtree (C-u C-u = goto last)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-a</code></td>
+<td class="org-left">archive subtree using the default command</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-s</code></td>
+<td class="org-left">move subtree to archive file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x a/A</code></td>
+<td class="org-left">toggle ARCHIVE tag / to ARCHIVE sibling</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-TAB</code></td>
+<td class="org-left">force cycling of an ARCHIVEd tree</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgd845797" class="outline-2">
+<h2 id="orgd845797">Filtering and Sparse Trees</h2>
+<div class="outline-text-2" id="text-orgd845797">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c /</code></td>
+<td class="org-left">construct a sparse tree by various criteria</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c / t/T</code></td>
+<td class="org-left">view TODO's in sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a t</code></td>
+<td class="org-left">global TODO list in agenda mode</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a L</code></td>
+<td class="org-left">time sorted view of current org file</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgadff934" class="outline-2">
+<h2 id="orgadff934">Tables</h2>
+<div class="outline-text-2" id="text-orgadff934">
+</div>
+<div id="outline-container-org8c0273a" class="outline-4">
+<h4 id="org8c0273a">Creating a table</h4>
+<div class="outline-text-4" id="text-org8c0273a">
 <ul class="org-ul">
-<li><code>level-0.org</code> <br />
-This file contains all export options lines. The <a href="#orgf52c941">special comment section</a>
-will not work for files in subdirectories. Hence we always use the export
-options line
-:#+STYLE: &lt;link rel="stylesheet" type="text/css" href="stylesheet.css" /&gt;
-&#x2026;suitable for each file in the projects root folder
-(<code>~/org/</code> or <code>~/B/</code> in the examples). Just drop the <code>#+TITLE</code> since this
-will be different for every file and automatically set on export (based on
-the filename if omitted).</li>
-<li><code>level-1.org</code> <br />
-This file contains all export options lines for the stylesheet suitable for
-each file in a subfolder of the projects root folder (e.g. <code>~/org/emacs/</code>
-or <code>~/org/networking/</code>). Just drop the <code>#+TITLE</code> again. The options line
-for the stylesheet looks like this:
-:#+STYLE: &lt;link rel="stylesheet" type="text/css" href="../stylesheet.css" /&gt;</li>
-
-<li>Add more files for more levels.</li>
+<li><code>C-c |</code>: convert region to table</li>
+<li><code>C-3 C-c |</code> : separator at least 3 spaces</li>
 </ul>
-
-<p>
-Now remove the <a href="#orgf52c941">special comment section</a> from the end of your Org-mode files in
-the project folders and change the export options template to
-</p>
-
-<pre class="example">
-#+SETUPFILE: ~/.emacs.d/org-templates/level-N.org
-#+TITLE: My Title
-
-</pre>
-
-<p>
-Replace <code>N</code> with distance to the root folder (<code>0</code>, <code>1</code> etc.) of your project
-and press <code>C-c</code> twice while still on this line to apply the
-changes. Subsequent lines still overwrite the settings for just this one file.
-</p>
-</div>
-
-
-<div id="outline-container-org4673d82" class="outline-3">
-<h3 id="org4673d82">More level files</h3>
-<div class="outline-text-3" id="text-org4673d82">
-<p>
-Also, these <i>level-N</i> files give us the chance to easily switch between different
-export setups. As an example, we could have a separate stylesheet and
-<code>org-info.js</code> setup for presentations, and put the appropriate options in a
-file named <code>level-0-slides.org</code>:
-</p>
-
-<pre class="example">
-#+INFOJS_OPT: path:org-info.js
-#+INFOJS_OPT: toc:nil view:slide
-#+STYLE: &lt;link rel="stylesheet" type="text/css" href="slides.css" /&gt;
-
-</pre>
-
-<p>
-Now it's as simple as typing '<i>-slides</i>' to change the appearance of any file
-in our project.
-</p>
-</div>
 </div>
 </div>
 
-<div id="outline-container-orgd00e6c2" class="outline-2">
-<h2 id="orgd00e6c2">More Projects</h2>
-<div class="outline-text-2" id="text-orgd00e6c2">
+<div id="outline-container-orgeeaffc3" class="outline-3">
+<h3 id="orgeeaffc3">Commands available inside tables</h3>
+<div class="outline-text-3" id="text-orgeeaffc3">
 <p>
-As we get used to note taking in org, we might add an <code>org</code> directory to most
-of our projects. All those projects are published as well. Project '<code>~/B/</code>'
-is published to '<code>~/public_html/B/</code>', '<code>~/C/</code>' is published to
-'<code>~/public_html/C/</code>', and so on. This leads to the problem of common
-stylesheets and current JavaScripts &#x2014; and to a new <i>component</i>.
+The following commands work when the cursor is inside a table.  Outside of
+tables, the same keys may have other functionality.
 </p>
 </div>
 
-<div id="outline-container-orge0385b2" class="outline-3">
-<h3 id="orge0385b2">The <i>inherit</i> component</h3>
-<div class="outline-text-3" id="text-orge0385b2">
-<p>
-Once we get tired of copying the static files from one project to another, the
-following configuration does the trick for us. We simply add the <i>inherit</i>
-component, that imports all the static files from our <code>~/org/</code> directory <sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>.
-From now on, it will be sufficient to edit stylesheets and scripts just
-there.
-</p>
+<div id="outline-container-org72cbe2e" class="outline-4">
+<h4 id="org72cbe2e">Re-aligning and field motion</h4>
+<div class="outline-text-4" id="text-org72cbe2e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"B-inherit"</span>
- <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/org/"</span>
- <span style="color: #6c71c4;">:recursive</span> t
- <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js"</span>
- <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
- <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment
-<span style="color: #839496;">)</span>
 
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"B-org"</span>
-<span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/B/"</span>
-<span style="color: #6c71c4;">:auto-index</span> t
-<span style="color: #6c71c4;">:index-filename</span> <span style="color: #2aa198;">"sitemap.org"</span>
-<span style="color: #6c71c4;">:index-title</span> <span style="color: #2aa198;">"Sitemap"</span>
-<span style="color: #6c71c4;">:recursive</span> t
-<span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-<span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
-<span style="color: #6c71c4;">:publishing-function</span> org-publish-org-to-html
-<span style="color: #6c71c4;">:headline-levels</span> <span style="color: #268bd2;">3</span>
-<span style="color: #6c71c4;">:auto-preamble</span> t
-<span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"B-static"</span>
- <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/B/"</span>
- <span style="color: #6c71c4;">:recursive</span> t
- <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">js</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">png</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">gif</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #6c71c4;">\\</span><span style="color: #d33682;">|</span><span style="color: #2aa198;">swf"</span>
- <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/B/"</span>
- <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment<span style="color: #839496;">)</span>
+<colgroup>
+<col  class="org-left" />
 
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"B"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"B-inherit"</span> <span style="color: #2aa198;">"B-notes"</span> <span style="color: #2aa198;">"B-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-</pre>
-</div>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">re-align the table without moving the cursor</td>
+</tr>
 
-<p>
-<b>Note</b>, that the inheritance trick works for non org directories. You might
-want to keep all your stylesheets and scripts in a single place, or even add
-more <i>inheritance</i> to your projects, to import sources from upstream.
-</p>
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">re-align the table, move to next field</td>
+</tr>
 
-<p>
-<b>Note</b> also, that <code>B-inherit</code> exports directly to the web. If you want to track
-the changes to <code>~org/*.css</code> directly in <code>~/B</code>, you must ensure, that <code>B-inherit</code> is
-the first component in <code>B</code> since the components in <code>B</code> are executed in
-the sequence listed: first get the new stylesheet into <code>B</code>, then execute
-<code>B-static</code>.
-</p>
-</div>
+<tr>
+<td class="org-left"><code>S-TAB</code></td>
+<td class="org-left">move to previous field</td>
+</tr>
 
-<div id="outline-container-org739ec87" class="outline-4">
-<h4 id="org739ec87">One more Example</h4>
-<div class="outline-text-4" id="text-org739ec87">
-<p>
-As I use org-info.js and track Worg git, I use "<code>inherit-org-info-js</code>" in all
-my <code>org</code> projects:
-</p>
+<tr>
+<td class="org-left"><code>RET</code></td>
+<td class="org-left">re-align the table, move to next row</td>
+</tr>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #839496;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span>
- <span style="color: #6c71c4;">:base-directory</span> <span style="color: #2aa198;">"~/develop/org/Worg/code/org-info-js/"</span>
- <span style="color: #6c71c4;">:recursive</span> t
- <span style="color: #6c71c4;">:base-extension</span> <span style="color: #2aa198;">"js"</span>
- <span style="color: #6c71c4;">:publishing-directory</span> <span style="color: #2aa198;">"~/org/"</span>
- <span style="color: #6c71c4;">:publishing-function</span> org-publish-attachment<span style="color: #839496;">)</span>
-
-<span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">... all the rest ... ;;</span>
-
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"B"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"B-inherit"</span> <span style="color: #2aa198;">"B-notes"</span> <span style="color: #2aa198;">"B-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"C"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"C-inherit"</span> <span style="color: #2aa198;">"C-notes"</span> <span style="color: #2aa198;">"C-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"D"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"D-inherit"</span> <span style="color: #2aa198;">"D-notes"</span> <span style="color: #2aa198;">"D-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-<span style="color: #839496;">(</span><span style="color: #2aa198;">"E"</span> <span style="color: #6c71c4;">:components</span> <span style="color: #2aa198;">(</span><span style="color: #2aa198;">"inherit-org-info-js"</span> <span style="color: #2aa198;">"E-inherit"</span> <span style="color: #2aa198;">"E-notes"</span> <span style="color: #2aa198;">"E-static"</span><span style="color: #2aa198;">)</span><span style="color: #839496;">)</span>
-</pre>
-</div>
-
-<p>
-&#x2026;means, <code>B</code> <code>C</code> <code>D</code> and <code>E</code> use my local stylesheets and always the latest
-version of <code>org-info.js</code>.
-</p>
-</div>
-</div>
+<tr>
+<td class="org-left"><code>M-a/e</code></td>
+<td class="org-left">move to beginning/end of field</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<div id="outline-container-orga54b2f1" class="outline-2">
-<h2 id="orga54b2f1">Overview</h2>
-<div class="outline-text-2" id="text-orga54b2f1">
-<p>
-Once there are lots of files and subdirectories, we're in the need of ways to
-easily navigate our notes in a browser. What we need now, is an index, an
-overview of all our note files.
-</p>
+<div id="outline-container-orga3b41c0" class="outline-4">
+<h4 id="orga3b41c0">Row and column editing</h4>
+<div class="outline-text-4" id="text-orga3b41c0">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-LEFT/RIGHT</code></td>
+<td class="org-left">move the current column left</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-LEFT</code></td>
+<td class="org-left">kill the current column</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-RIGHT</code></td>
+<td class="org-left">insert new column to left of cursor position</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-UP/DOWN</code></td>
+<td class="org-left">move the current row up/down</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-UP</code></td>
+<td class="org-left">kill the current row or horizontal line</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-DOWN</code></td>
+<td class="org-left">insert new row above the current row</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c -</code></td>
+<td class="org-left">insert hline below (C-u : above) current row</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c RET</code></td>
+<td class="org-left">insert hline and move to line below it</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ^</code></td>
+<td class="org-left">sort lines in region</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
-<div id="outline-container-org10111e0" class="outline-3">
-<h3 id="org10111e0">The sitemap</h3>
-<div class="outline-text-3" id="text-org10111e0">
-<p>
-Org-modes great publishing also generates a recursive sitemap. Its name 
-defaults to <code>sitemap.org</code>, which get's in our way, since we have a real 
-startpage as <code>sitemap.html</code> <sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>. Fortunately there is a configuration 
-option to change the name of the generated sitemap. To generate the sitemap,
-add these lines to the <i>notes</i> component:
-</p>
+<div id="outline-container-orgbada012" class="outline-4">
+<h4 id="orgbada012">Regions</h4>
+<div class="outline-text-4" id="text-orgbada012">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #6c71c4;">:auto-sitemap</span> t                <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">Generate sitemap.org automagically...</span>
-<span style="color: #6c71c4;">:sitemap-filename</span> <span style="color: #2aa198;">"sitemap.org"</span>  <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">... call it sitemap.org (it's the default)...</span>
-<span style="color: #6c71c4;">:sitemap-title</span> <span style="color: #2aa198;">"Sitemap"</span>         <span style="color: #586e75; font-style: italic;">; </span><span style="color: #586e75; font-style: italic;">... with title 'Sitemap'.</span>
-</pre>
-</div>
 
-<p>
-The sitemap will reflect the tree structure of the project. To access the
-sitemap easily, we could do two things:
-</p>
+<colgroup>
+<col  class="org-left" />
 
-<ol class="org-ol">
-<li>Setup the '<i>UP</i>' link of the Startpage to link to <code>sitemap.html</code> (see next
-section),</li>
-<li>use the '<code>#+INCLUDE: sitemap.org</code>' directive. Most of my Org-mode files
-contain a chapter called "<i>Links</i>" at the end of the file, which contains
-a subsection <i>Sitemap</i> that in turn just consists of that
-diretive. For the <code>index.org</code> files in the root directory, I include the
-sitemap as the first section.</li>
-</ol>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-w/M-w/C-y</code></td>
+<td class="org-left">cut/copy/paste rectangular region</td>
+</tr>
 
-<p>
-You can also change the position of folders with <code>:sitemap-sort-folders</code>,
-this can be set to <code>last</code> or <code>first</code> (default), to display folders last or 
-first.
-</p>
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">fill paragraph across selected cells</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<div id="outline-container-org61d11cb" class="outline-3">
-<h3 id="org61d11cb">org-info.js</h3>
-<div class="outline-text-3" id="text-org61d11cb">
-<p>
-Another way to get additional links to navigate the structure is
-org-info.js. Let's set it up like this (either in every file, or in
-<code>org-level-N.org</code>, where <code>N &gt; 0</code>):
-</p>
+<div id="outline-container-org8db36ef" class="outline-4">
+<h4 id="org8db36ef">Miscellaneous</h4>
+<div class="outline-text-4" id="text-org8db36ef">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<pre class="example">
-#+LINK_UP: index.html
 
-</pre>
+<colgroup>
+<col  class="org-left" />
 
-<p>
-This makes the little <i>UP</i> link ('<code>h</code>') point to the <code>index.html</code> in the
-current directory.
-</p>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c `</code></td>
+<td class="org-left">edit the current field in a separate window</td>
+</tr>
 
-<p>
-The <code>index.org</code> in the root of the project has the <i>index file</i> as section 2
-(which I may reach pressing '<code>n</code>' then), and the same option set like this:
-</p>
+<tr>
+<td class="org-left"><code>C-u TAB</code></td>
+<td class="org-left">make current field fully visible</td>
+</tr>
 
-<pre class="example">
-#+LINK_UP: sitemap.html
+<tr>
+<td class="org-left"><code>M-x org-table-export</code></td>
+<td class="org-left">export as tab-separated file</td>
+</tr>
 
-</pre>
+<tr>
+<td class="org-left"><code>M-x org-table-import</code></td>
+<td class="org-left">import tab-separated file</td>
+</tr>
 
-<p>
-For an <code>index.org</code> in a subdirectory:
-</p>
-
-<pre class="example">
-#+LINK_UP: ../index.html
-
-</pre>
-
-<p>
-The <code>LINK_HOME</code> always points to the same file:
-</p>
-
-<pre class="example">
-#+LINK_HOME: http://localhost/~user/index.html
-
-</pre>
+<tr>
+<td class="org-left"><code>C-c +</code></td>
+<td class="org-left">sum numbers in current column/rectangle</td>
+</tr>
+</tbody>
+</table>
 
 <p>
-Please consider replacing the last one with a relative path (which will be
-different for every level of subdirectories).
-</p>
-
-<p>
-No matter where we are, we may always press <code>H n</code> and we face the sitemap.
-No matter where we are, we may always press <code>h</code> to move up the tree.
+To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org1bf146b" class="outline-2">
-<h2 id="org1bf146b">Special symbols</h2>
-<div class="outline-text-2" id="text-org1bf146b">
-<p>
-This is a list of LaTeX symbols understood by Org-mode. You may use most of
-those LaTeX symbols to get the desired results (shown in the first column)
-when exporting to HTML. Note though, that not all symbols are translated to
-HTML. They are listed anyway, since they may be used for LaTeX export
-nonetheless. Some characters in the first column are invisible (spaces). To
-see them, mark the part of the table using the mouse.
-</p>
+<div id="outline-container-orgf84d44f" class="outline-3">
+<h3 id="orgf84d44f">Tables created with the table.el package</h3>
+<div class="outline-text-3" id="text-orgf84d44f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<p>
-You may produce special HTML characters for verbatim <code>#+BEGIN\_HTML</code> sections
-using <a href="http://www-atm.physics.ox.ac.uk/user/iwi/charmap.html">http://www-atm.physics.ox.ac.uk/user/iwi/charmap.html</a> (download link on
-the bottom of that page).
-</p>
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c ~</code></td>
+<td class="org-left">insert a new table.el table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">recognize existing table.el table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ~</code></td>
+<td class="org-left">convert table (Org-mode &lt;-&gt; table.el)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org3b2e758" class="outline-3">
+<h3 id="org3b2e758">Spreadsheet</h3>
+<div class="outline-text-3" id="text-org3b2e758">
+<ul class="org-ul">
+<li>Formulas typed in field are executed by <code>TAB</code>, <code>RET</code> and <code>C-c C-c</code>.</li>
+<li><code>=</code> introduces a column formula, <code>:=</code> a field formula.</li>
+<li>Example: Add Col1 and Col2: <code>=1+2</code></li>
+<li>&#x2026; with printf format specification: <code>=1+2;%.2f</code></li>
+<li>&#x2026; with constants from constants.el: <code>=1/c/cm</code></li>
+<li>sum from 2nd to 3rd hline: <code>:=vsum(@II..@III)</code></li>
+</ul>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1075,1491 +885,1356 @@ the bottom of that page).
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Symbol</th>
-<th scope="col" class="org-left">LaTeX</th>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">&nbsp;</td>
-<td class="org-left"><code>\nbsp</code></td>
+<td class="org-left"><code>=</code></td>
+<td class="org-left">apply current column formula</td>
 </tr>
 
 <tr>
-<td class="org-left">&iexcl;</td>
-<td class="org-left"><code>\iexcl</code></td>
+<td class="org-left"><code>C-c =</code></td>
+<td class="org-left">set and eval column formula</td>
 </tr>
 
 <tr>
-<td class="org-left">&cent;</td>
-<td class="org-left"><code>\cent</code></td>
+<td class="org-left"><code>C-u C-c #</code></td>
+<td class="org-left">set and eval field formula</td>
 </tr>
 
 <tr>
-<td class="org-left">&pound;</td>
-<td class="org-left"><code>\pound</code></td>
+<td class="org-left"><code>C-c *</code></td>
+<td class="org-left">re-apply all stored equations to current line</td>
 </tr>
 
 <tr>
-<td class="org-left">&curren;</td>
-<td class="org-left"><code>\curren</code></td>
+<td class="org-left"><code>C-u C-c *</code></td>
+<td class="org-left">re-apply all stored equations to entire table</td>
 </tr>
 
 <tr>
-<td class="org-left">&yen;</td>
-<td class="org-left"><code>\yen</code></td>
+<td class="org-left"><code>C-u C-u C-c *</code></td>
+<td class="org-left">iterate table to stability</td>
 </tr>
 
 <tr>
-<td class="org-left">&brvbar;</td>
-<td class="org-left"><code>\brvbar</code></td>
+<td class="org-left"><code>C-#</code></td>
+<td class="org-left">rotate calculation mark through # * ! ^ _</td>
 </tr>
 
 <tr>
-<td class="org-left">&vert;</td>
-<td class="org-left"><code>\vert</code></td>
+<td class="org-left"><code>C-c ?</code></td>
+<td class="org-left">show line, column, formula reference</td>
 </tr>
 
 <tr>
-<td class="org-left">&sect;</td>
-<td class="org-left"><code>\sect</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&uml;</td>
-<td class="org-left"><code>\uml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&copy;</td>
-<td class="org-left"><code>\copy</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ordf;</td>
-<td class="org-left"><code>\ordf</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&laquo;</td>
-<td class="org-left"><code>\laquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&not;</td>
-<td class="org-left"><code>\not</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&shy;</td>
-<td class="org-left"><code>\shy</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&reg;</td>
-<td class="org-left"><code>\reg</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&macr;</td>
-<td class="org-left"><code>\macr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&deg;</td>
-<td class="org-left"><code>\deg</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&plusmn;</td>
-<td class="org-left"><code>\plusmn</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sup1;</td>
-<td class="org-left"><code>\sup1</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sup2;</td>
-<td class="org-left"><code>\sup2</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sup3;</td>
-<td class="org-left"><code>\sup3</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&acute;</td>
-<td class="org-left"><code>\acute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&micro;</td>
-<td class="org-left"><code>\micro</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&para;</td>
-<td class="org-left"><code>\para</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&middot;</td>
-<td class="org-left"><code>\middot</code></td>
-</tr>
-
-<tr>
-<td class="org-left">o</td>
-<td class="org-left"><code>\odot</code></td>
-</tr>
-
-<tr>
-<td class="org-left">*</td>
-<td class="org-left"><code>\star</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&cedil;</td>
-<td class="org-left"><code>\cedil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ordm;</td>
-<td class="org-left"><code>\ordm</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&raquo;</td>
-<td class="org-left"><code>\raquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&frac14;</td>
-<td class="org-left"><code>\frac14</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&frac12;</td>
-<td class="org-left"><code>\frac12</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&frac34;</td>
-<td class="org-left"><code>\frac34</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&iquest;</td>
-<td class="org-left"><code>\iquest</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Agrave;</td>
-<td class="org-left"><code>\Agrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Aacute;</td>
-<td class="org-left"><code>\Aacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Acirc;</td>
-<td class="org-left"><code>\Acirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Atilde;</td>
-<td class="org-left"><code>\Atilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Auml;</td>
-<td class="org-left"><code>\Auml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Aring;</td>
-<td class="org-left"><code>\Aring</code> <code>\AA</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&AElig;</td>
-<td class="org-left"><code>\AElig</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ccedil;</td>
-<td class="org-left"><code>\Ccedil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Egrave;</td>
-<td class="org-left"><code>\Egrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Eacute;</td>
-<td class="org-left"><code>\Eacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ecirc;</td>
-<td class="org-left"><code>\Ecirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Euml;</td>
-<td class="org-left"><code>\Euml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Igrave;</td>
-<td class="org-left"><code>\Igrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Iacute;</td>
-<td class="org-left"><code>\Iacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Icirc;</td>
-<td class="org-left"><code>\Icirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Iuml;</td>
-<td class="org-left"><code>\Iuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ETH;</td>
-<td class="org-left"><code>\ETH</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ntilde;</td>
-<td class="org-left"><code>\Ntilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ograve;</td>
-<td class="org-left"><code>\Ograve</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Oacute;</td>
-<td class="org-left"><code>\Oacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ocirc;</td>
-<td class="org-left"><code>\Ocirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Otilde;</td>
-<td class="org-left"><code>\Otilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ouml;</td>
-<td class="org-left"><code>\Ouml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&times;</td>
-<td class="org-left"><code>\times</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Oslash;</td>
-<td class="org-left"><code>\Oslash</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ugrave;</td>
-<td class="org-left"><code>\Ugrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Uacute;</td>
-<td class="org-left"><code>\Uacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Ucirc;</td>
-<td class="org-left"><code>\Ucirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Uuml;</td>
-<td class="org-left"><code>\Uuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Yacute;</td>
-<td class="org-left"><code>\Yacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&THORN;</td>
-<td class="org-left"><code>\THORN</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&szlig;</td>
-<td class="org-left"><code>\szlig</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&agrave;</td>
-<td class="org-left"><code>\agrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&aacute;</td>
-<td class="org-left"><code>\aacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&acirc;</td>
-<td class="org-left"><code>\acirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&atilde;</td>
-<td class="org-left"><code>\atilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&auml;</td>
-<td class="org-left"><code>\auml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&aring;</td>
-<td class="org-left"><code>\aring</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&aelig;</td>
-<td class="org-left"><code>\aelig</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ccedil;</td>
-<td class="org-left"><code>\ccedil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&egrave;</td>
-<td class="org-left"><code>\egrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&eacute;</td>
-<td class="org-left"><code>\eacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ecirc;</td>
-<td class="org-left"><code>\ecirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&euml;</td>
-<td class="org-left"><code>\euml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&igrave;</td>
-<td class="org-left"><code>\igrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&iacute;</td>
-<td class="org-left"><code>\iacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&icirc;</td>
-<td class="org-left"><code>\icirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&iuml;</td>
-<td class="org-left"><code>\iuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&eth;</td>
-<td class="org-left"><code>\eth</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ntilde;</td>
-<td class="org-left"><code>\ntilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ograve;</td>
-<td class="org-left"><code>\ograve</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&oacute;</td>
-<td class="org-left"><code>\oacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ocirc;</td>
-<td class="org-left"><code>\ocirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&otilde;</td>
-<td class="org-left"><code>\otilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ouml;</td>
-<td class="org-left"><code>\ouml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&oslash;</td>
-<td class="org-left"><code>\oslash</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ugrave;</td>
-<td class="org-left"><code>\ugrave</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&uacute;</td>
-<td class="org-left"><code>\uacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ucirc;</td>
-<td class="org-left"><code>\ucirc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&uuml;</td>
-<td class="org-left"><code>\uuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&yacute;</td>
-<td class="org-left"><code>\yacute</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&thorn;</td>
-<td class="org-left"><code>\thorn</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&yuml;</td>
-<td class="org-left"><code>\yuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&fnof;</td>
-<td class="org-left"><code>\fnof</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Alpha;</td>
-<td class="org-left"><code>\Alpha</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Beta;</td>
-<td class="org-left"><code>\Beta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Gamma;</td>
-<td class="org-left"><code>\Gamma</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Delta;</td>
-<td class="org-left"><code>\Delta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Epsilon;</td>
-<td class="org-left"><code>\Epsilon</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Zeta;</td>
-<td class="org-left"><code>\Zeta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Eta;</td>
-<td class="org-left"><code>\Eta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Theta;</td>
-<td class="org-left"><code>\Theta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Iota;</td>
-<td class="org-left"><code>\Iota</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Kappa;</td>
-<td class="org-left"><code>\Kappa</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Lambda;</td>
-<td class="org-left"><code>\Lambda</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Mu;</td>
-<td class="org-left"><code>\Mu</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Nu;</td>
-<td class="org-left"><code>\Nu</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Xi;</td>
-<td class="org-left"><code>\Xi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Omicron;</td>
-<td class="org-left"><code>\Omicron</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Pi;</td>
-<td class="org-left"><code>\Pi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Rho;</td>
-<td class="org-left"><code>\Rho</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Sigma;</td>
-<td class="org-left"><code>\Sigma</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Tau;</td>
-<td class="org-left"><code>\Tau</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Upsilon;</td>
-<td class="org-left"><code>\Upsilon</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Phi;</td>
-<td class="org-left"><code>\Phi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Chi;</td>
-<td class="org-left"><code>\Chi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Psi;</td>
-<td class="org-left"><code>\Psi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Omega;</td>
-<td class="org-left"><code>\Omega</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&alpha;</td>
-<td class="org-left"><code>\alpha</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&beta;</td>
-<td class="org-left"><code>\beta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&gamma;</td>
-<td class="org-left"><code>\gamma</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&delta;</td>
-<td class="org-left"><code>\delta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&epsilon;</td>
-<td class="org-left"><code>\epsilon</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&epsilon;</td>
-<td class="org-left"><code>\varepsilon</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&zeta;</td>
-<td class="org-left"><code>\zeta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&eta;</td>
-<td class="org-left"><code>\eta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&theta;</td>
-<td class="org-left"><code>\theta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&iota;</td>
-<td class="org-left"><code>\iota</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&kappa;</td>
-<td class="org-left"><code>\kappa</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lambda;</td>
-<td class="org-left"><code>\lambda</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&mu;</td>
-<td class="org-left"><code>\mu</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&nu;</td>
-<td class="org-left"><code>\nu</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&xi;</td>
-<td class="org-left"><code>\xi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&omicron;</td>
-<td class="org-left"><code>\omicron</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&pi;</td>
-<td class="org-left"><code>\pi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rho;</td>
-<td class="org-left"><code>\rho</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sigmaf;</td>
-<td class="org-left"><code>\sigmaf</code>  <code>\varsigma</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sigma;</td>
-<td class="org-left"><code>\sigma</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&tau;</td>
-<td class="org-left"><code>\tau</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&upsilon;</td>
-<td class="org-left"><code>\upsilon</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&phi;</td>
-<td class="org-left"><code>\phi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&chi;</td>
-<td class="org-left"><code>\chi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&psi;</td>
-<td class="org-left"><code>\psi</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&omega;</td>
-<td class="org-left"><code>\omega</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&thetasym;</td>
-<td class="org-left"><code>\thetasym</code>  <code>\vartheta</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&upsih;</td>
-<td class="org-left"><code>\upsih</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&piv;</td>
-<td class="org-left"><code>\piv</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&bull;</td>
-<td class="org-left"><code>\bull</code>  <code>\bullet</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&hellip;</td>
-<td class="org-left"><code>\hellip</code>  <code>\dots</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&prime;</td>
-<td class="org-left"><code>\prime</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Prime;</td>
-<td class="org-left"><code>\Prime</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&oline;</td>
-<td class="org-left"><code>\oline</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&frasl;</td>
-<td class="org-left"><code>\frasl</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&weierp;</td>
-<td class="org-left"><code>\weierp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&image;</td>
-<td class="org-left"><code>\image</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&real;</td>
-<td class="org-left"><code>\real</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&trade;</td>
-<td class="org-left"><code>\trade</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&alefsym;</td>
-<td class="org-left"><code>\alefsym</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&larr;</td>
-<td class="org-left"><code>\larr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&uarr;</td>
-<td class="org-left"><code>\uarr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rarr;</td>
-<td class="org-left"><code>\rarr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&darr;</td>
-<td class="org-left"><code>\darr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&harr;</td>
-<td class="org-left"><code>\harr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&crarr;</td>
-<td class="org-left"><code>\crarr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lArr;</td>
-<td class="org-left"><code>\lArr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&uArr;</td>
-<td class="org-left"><code>\uArr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rArr;</td>
-<td class="org-left"><code>\rArr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&dArr;</td>
-<td class="org-left"><code>\dArr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&hArr;</td>
-<td class="org-left"><code>\hArr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&forall;</td>
-<td class="org-left"><code>\forall</code></td>
-</tr>
-
-<tr>
-<td class="org-left">\part</td>
-<td class="org-left"><code>\part</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&exist;</td>
-<td class="org-left"><code>\exist</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&empty;</td>
-<td class="org-left"><code>\empty</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&nabla;</td>
-<td class="org-left"><code>\nabla</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&isin;</td>
-<td class="org-left"><code>\isin</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&notin;</td>
-<td class="org-left"><code>\notin</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ni;</td>
-<td class="org-left"><code>\ni</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&prod;</td>
-<td class="org-left"><code>\prod</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sum;</td>
-<td class="org-left"><code>\sum</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&minus;</td>
-<td class="org-left"><code>\minus</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lowast;</td>
-<td class="org-left"><code>\lowast</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&radic;</td>
-<td class="org-left"><code>\radic</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&prop;</td>
-<td class="org-left"><code>\prop</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&infin;</td>
-<td class="org-left"><code>\infin</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ang;</td>
-<td class="org-left"><code>\ang</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&cap;</td>
-<td class="org-left"><code>\cap</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&cup;</td>
-<td class="org-left"><code>\cup</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&int;</td>
-<td class="org-left"><code>\int</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&there4;</td>
-<td class="org-left"><code>\there4</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sim;</td>
-<td class="org-left"><code>\sim</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&cong;</td>
-<td class="org-left"><code>\cong</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&asymp;</td>
-<td class="org-left"><code>\asymp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ne;</td>
-<td class="org-left"><code>\ne</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&equiv;</td>
-<td class="org-left"><code>\equiv</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&le;</td>
-<td class="org-left"><code>\le</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ge;</td>
-<td class="org-left"><code>\ge</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sub;</td>
-<td class="org-left"><code>\sub</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sup;</td>
-<td class="org-left"><code>\sup</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&nsub;</td>
-<td class="org-left"><code>\nsub</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sube;</td>
-<td class="org-left"><code>\sube</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&supe;</td>
-<td class="org-left"><code>\supe</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&oplus;</td>
-<td class="org-left"><code>\oplus</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&otimes;</td>
-<td class="org-left"><code>\otimes</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&perp;</td>
-<td class="org-left"><code>\perp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sdot;</td>
-<td class="org-left"><code>\sdot</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lceil;</td>
-<td class="org-left"><code>\lceil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rceil;</td>
-<td class="org-left"><code>\rceil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lfloor;</td>
-<td class="org-left"><code>\lfloor</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rfloor;</td>
-<td class="org-left"><code>\rfloor</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lang;</td>
-<td class="org-left"><code>\lang</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rang;</td>
-<td class="org-left"><code>\rang</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&loz;</td>
-<td class="org-left"><code>\loz</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&spades;</td>
-<td class="org-left"><code>\spades</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&clubs;</td>
-<td class="org-left"><code>\clubs</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&hearts;</td>
-<td class="org-left"><code>\hearts</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&diams;</td>
-<td class="org-left"><code>\diams</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&smile;</td>
-<td class="org-left"><code>\smile</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&quot;</td>
-<td class="org-left"><code>\quot</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&amp;</td>
-<td class="org-left"><code>\amp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lt;</td>
-<td class="org-left"><code>\lt</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&gt;</td>
-<td class="org-left"><code>\gt</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&OElig;</td>
-<td class="org-left"><code>\OElig</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&oelig;</td>
-<td class="org-left"><code>\oelig</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Scaron;</td>
-<td class="org-left"><code>\Scaron</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&scaron;</td>
-<td class="org-left"><code>\scaron</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Yuml;</td>
-<td class="org-left"><code>\Yuml</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&circ;</td>
-<td class="org-left"><code>\circ</code></td>
-</tr>
-
-<tr>
-<td class="org-left">~</td>
-<td class="org-left"><code>\tilde</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ensp;</td>
-<td class="org-left"><code>\ensp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&emsp;</td>
-<td class="org-left"><code>\emsp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&thinsp;</td>
-<td class="org-left"><code>\thinsp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&zwnj;</td>
-<td class="org-left"><code>\zwnj</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&zwj;</td>
-<td class="org-left"><code>\zwj</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lrm;</td>
-<td class="org-left"><code>\lrm</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rlm;</td>
-<td class="org-left"><code>\rlm</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ndash;</td>
-<td class="org-left"><code>\ndash</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&mdash;</td>
-<td class="org-left"><code>\mdash</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lsquo;</td>
-<td class="org-left"><code>\lsquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rsquo;</td>
-<td class="org-left"><code>\rsquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&sbquo;</td>
-<td class="org-left"><code>\sbquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&ldquo;</td>
-<td class="org-left"><code>\ldquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rdquo;</td>
-<td class="org-left"><code>\rdquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&bdquo;</td>
-<td class="org-left"><code>\bdquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&dagger;</td>
-<td class="org-left"><code>\dagger</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&Dagger;</td>
-<td class="org-left"><code>\Dagger</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&permil;</td>
-<td class="org-left"><code>\permil</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&lsaquo;</td>
-<td class="org-left"><code>\lsaquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&rsaquo;</td>
-<td class="org-left"><code>\rsaquo</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&euro;</td>
-<td class="org-left"><code>\euro</code></td>
-</tr>
-
-<tr>
-<td class="org-left">arccos</td>
-<td class="org-left"><code>\arccos</code></td>
-</tr>
-
-<tr>
-<td class="org-left">arcsin</td>
-<td class="org-left"><code>\arcsin</code></td>
-</tr>
-
-<tr>
-<td class="org-left">arctan</td>
-<td class="org-left"><code>\arctan</code></td>
-</tr>
-
-<tr>
-<td class="org-left">arg</td>
-<td class="org-left"><code>\arg</code></td>
-</tr>
-
-<tr>
-<td class="org-left">cos</td>
-<td class="org-left"><code>\cos</code></td>
-</tr>
-
-<tr>
-<td class="org-left">cosh</td>
-<td class="org-left"><code>\cosh</code></td>
-</tr>
-
-<tr>
-<td class="org-left">cot</td>
-<td class="org-left"><code>\cot</code></td>
-</tr>
-
-<tr>
-<td class="org-left">coth</td>
-<td class="org-left"><code>\coth</code></td>
-</tr>
-
-<tr>
-<td class="org-left">csc</td>
-<td class="org-left"><code>\csc</code></td>
-</tr>
-
-<tr>
-<td class="org-left">&deg;</td>
-<td class="org-left"><code>\deg</code></td>
-</tr>
-
-<tr>
-<td class="org-left">det</td>
-<td class="org-left"><code>\det</code></td>
-</tr>
-
-<tr>
-<td class="org-left">dim</td>
-<td class="org-left"><code>\dim</code></td>
-</tr>
-
-<tr>
-<td class="org-left">exp</td>
-<td class="org-left"><code>\exp</code></td>
-</tr>
-
-<tr>
-<td class="org-left">gcd</td>
-<td class="org-left"><code>\gcd</code></td>
-</tr>
-
-<tr>
-<td class="org-left">hom</td>
-<td class="org-left"><code>\hom</code></td>
-</tr>
-
-<tr>
-<td class="org-left">inf</td>
-<td class="org-left"><code>\inf</code></td>
-</tr>
-
-<tr>
-<td class="org-left">ker</td>
-<td class="org-left"><code>\ker</code></td>
-</tr>
-
-<tr>
-<td class="org-left">lg</td>
-<td class="org-left"><code>\lg</code></td>
-</tr>
-
-<tr>
-<td class="org-left">lim</td>
-<td class="org-left"><code>\lim</code></td>
-</tr>
-
-<tr>
-<td class="org-left">liminf</td>
-<td class="org-left"><code>\liminf</code></td>
-</tr>
-
-<tr>
-<td class="org-left">limsup</td>
-<td class="org-left"><code>\limsup</code></td>
-</tr>
-
-<tr>
-<td class="org-left">ln</td>
-<td class="org-left"><code>\ln</code></td>
-</tr>
-
-<tr>
-<td class="org-left">log</td>
-<td class="org-left"><code>\log</code></td>
-</tr>
-
-<tr>
-<td class="org-left">max</td>
-<td class="org-left"><code>\max</code></td>
-</tr>
-
-<tr>
-<td class="org-left">min</td>
-<td class="org-left"><code>\min</code></td>
-</tr>
-
-<tr>
-<td class="org-left">Pr</td>
-<td class="org-left"><code>\Pr</code></td>
-</tr>
-
-<tr>
-<td class="org-left">sec</td>
-<td class="org-left"><code>\sec</code></td>
-</tr>
-
-<tr>
-<td class="org-left">sin</td>
-<td class="org-left"><code>\sin</code></td>
-</tr>
-
-<tr>
-<td class="org-left">sinh</td>
-<td class="org-left"><code>\sinh</code></td>
-</tr>
-
-<tr>
-<td class="org-left">tan</td>
-<td class="org-left"><code>\tan</code></td>
-</tr>
-
-<tr>
-<td class="org-left">tanh</td>
-<td class="org-left"><code>\tanh</code></td>
+<td class="org-left"><code>C-c }/{</code></td>
+<td class="org-left">toggle grid / debugger</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
+<div id="outline-container-org2f34e0a" class="outline-3">
+<h3 id="org2f34e0a">Formula Editor</h3>
+<div class="outline-text-3" id="text-org2f34e0a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div id="outline-container-org70c7106" class="outline-2">
-<h2 id="org70c7106">Further reading</h2>
-<div class="outline-text-2" id="text-org70c7106">
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c '</code></td>
+<td class="org-left">edit formulas in separate buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">exit and install new formulas</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-c</code></td>
+<td class="org-left">exit, install, and apply new formulas</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">abort</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-r</code></td>
+<td class="org-left">toggle reference style</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">pretty-print Lisp formula</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-TAB</code></td>
+<td class="org-left">complete Lisp symbol</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-cursor</code></td>
+<td class="org-left">shift reference point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-up/down</code></td>
+<td class="org-left">shift test line for column references</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-up/down</code></td>
+<td class="org-left">scroll the window showing the table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c }</code></td>
+<td class="org-left">toggle table coordinate grid</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc57714c" class="outline-2">
+<h2 id="orgc57714c">Links</h2>
+<div class="outline-text-2" id="text-orgc57714c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c l</code></td>
+<td class="org-left">globally store link to the current location</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-l</code></td>
+<td class="org-left">insert a link (TAB completes stored links)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-l</code></td>
+<td class="org-left">insert file link with file name completion</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-l</code></td>
+<td class="org-left">edit (also hidden part of) link at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">open file links in emacs</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-o</code></td>
+<td class="org-left">&#x2026;force open in emacs/other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-1/2</code></td>
+<td class="org-left">open link at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-3</code></td>
+<td class="org-left">&#x2026;force open in emacs/other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c %</code></td>
+<td class="org-left">record a position in mark ring</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &amp;</code></td>
+<td class="org-left">jump back to last followed link(s)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-n</code></td>
+<td class="org-left">find next link</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-p</code></td>
+<td class="org-left">find previous link</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c '</code></td>
+<td class="org-left">edit code snippet of file at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-v</code></td>
+<td class="org-left">toggle inline display of linked images</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org3008612" class="outline-2">
+<h2 id="org3008612">Working with Code (Babel)</h2>
+<div class="outline-text-2" id="text-org3008612">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">execute code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">open results of code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v c</code></td>
+<td class="org-left">check code block at point for errors</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v j</code></td>
+<td class="org-left">insert a header argument with completion</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v v</code></td>
+<td class="org-left">view expanded body of code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v I</code></td>
+<td class="org-left">view information about code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v g</code></td>
+<td class="org-left">go to named code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v r</code></td>
+<td class="org-left">go to named result</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v u</code></td>
+<td class="org-left">go to the head of the current code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v n</code></td>
+<td class="org-left">go to the next code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v p</code></td>
+<td class="org-left">go to the previous code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v d</code></td>
+<td class="org-left">demarcate a code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v x</code></td>
+<td class="org-left">execute the next key sequence in the code edit bu</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v b</code></td>
+<td class="org-left">execute all code blocks in current buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v s</code></td>
+<td class="org-left">execute all code blocks in current subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v t</code></td>
+<td class="org-left">tangle code blocks in current file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v f</code></td>
+<td class="org-left">tangle code blocks in supplied file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v i</code></td>
+<td class="org-left">ingest all code blocks in supplied file into the</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v z</code></td>
+<td class="org-left">switch to the session of the current code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v l</code></td>
+<td class="org-left">load the current code block into a session</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v a</code></td>
+<td class="org-left">view sha1 hash of the current code block</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb21705a" class="outline-2">
+<h2 id="orgb21705a">Completion</h2>
+<div class="outline-text-2" id="text-orgb21705a">
 <p>
-For more information you might want to read the great Org-mode manual. One of
-the nicest mailing lists on this planet, BTW, is emacs-orgmode (archive)
-where you might as well find answers to your questions.
+In-buffer completion completes TODO keywords at headline start, TeX macros
+after `\', option keywords after `#-', TAGS after `:', and dictionary words
+elsewhere.
 </p>
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-TAB</code></td>
+<td class="org-left">complete word at point</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org9a6194b" class="outline-2">
+<h2 id="org9a6194b"><span class="todo TODO">TODO</span> Items and Checkboxes</h2>
+<div class="outline-text-2" id="text-org9a6194b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-t</code></td>
+<td class="org-left">rotate the state of the current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-LEFT/RIGHT</code></td>
+<td class="org-left">select next/previous state</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-S-LEFT/RIGHT</code></td>
+<td class="org-left">select next/previous set</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x o</code></td>
+<td class="org-left">toggle ORDERED property</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v</code></td>
+<td class="org-left">view TODO items in a sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-3 C-c C-v</code></td>
+<td class="org-left">view 3rd TODO keyword's sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c , [ABC]</code></td>
+<td class="org-left">set the priority of the current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c , SPC</code></td>
+<td class="org-left">remove priority cookie from current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">raise/lower priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-RET</code></td>
+<td class="org-left">insert new checkbox item in plain list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-b</code></td>
+<td class="org-left">toggle checkbox(es) in region/entry/at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">toggle checkbox at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c #</code></td>
+<td class="org-left">update checkbox statistics (C-u : whole file)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgcf1fdca" class="outline-2">
+<h2 id="orgcf1fdca">Tags</h2>
+<div class="outline-text-2" id="text-orgcf1fdca">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">set tags for current heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-q</code></td>
+<td class="org-left">realign tags in all headings</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c \\</code></td>
+<td class="org-left">create sparse tree with matching tags</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">globally (agenda) match tags at cursor</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7b8070c" class="outline-2">
+<h2 id="org7b8070c">Properties and Column View</h2>
+<div class="outline-text-2" id="text-org7b8070c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x p/e</code></td>
+<td class="org-left">set property/effort</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">special commands in property lines</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-left/right</code></td>
+<td class="org-left">next/previous allowed value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-c</code></td>
+<td class="org-left">turn on column view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x i</code></td>
+<td class="org-left">capture columns view in dynamic block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>q</code></td>
+<td class="org-left">quit column view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v</code></td>
+<td class="org-left">show full value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e</code></td>
+<td class="org-left">edit value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>n/p</code> or <code>S-left/right</code></td>
+<td class="org-left">next/previous allowed value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a</code></td>
+<td class="org-left">edit allowed values list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&gt; / &lt;</code></td>
+<td class="org-left">make column wider/narrower</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-left/right</code></td>
+<td class="org-left">move column left/right</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-right</code></td>
+<td class="org-left">add new column</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-left</code></td>
+<td class="org-left">Delete current column</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf354734" class="outline-2">
+<h2 id="orgf354734">Timestamps</h2>
+<div class="outline-text-2" id="text-orgf354734">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c .</code></td>
+<td class="org-left">prompt for date and insert timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c .</code></td>
+<td class="org-left">like C-c . but insert date and time format</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c !</code></td>
+<td class="org-left">like C-c . but make stamp inactive</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-d</code></td>
+<td class="org-left">insert DEADLINE timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-s</code></td>
+<td class="org-left">insert SCHEDULED timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c / d</code></td>
+<td class="org-left">create sparse tree with all deadlines due</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-y</code></td>
+<td class="org-left">the time between 2 dates in a time range</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-RIGHT/LEFT</code></td>
+<td class="org-left">change timestamp at cursor ±1 day</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">change year/month/day at cursor by ±1</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &gt;</code></td>
+<td class="org-left">access the calendar for the current date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &lt;</code></td>
+<td class="org-left">insert timestamp matching date in calendar</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">access agenda for current date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-1/RET</code></td>
+<td class="org-left">select date while prompted</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-t</code></td>
+<td class="org-left">toggle custom format display for dates/times</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-org1e56aca" class="outline-3">
+<h3 id="org1e56aca">Clocking time</h3>
+<div class="outline-text-3" id="text-org1e56aca">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-i</code></td>
+<td class="org-left">start clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-o/x</code></td>
+<td class="org-left">stop/cancel clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-d</code></td>
+<td class="org-left">display total subtree times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">remove displayed times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-r</code></td>
+<td class="org-left">insert/update table with clock report</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org16888c0" class="outline-2">
+<h2 id="org16888c0">Agenda Views</h2>
+<div class="outline-text-2" id="text-org16888c0">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c [</code></td>
+<td class="org-left">add/move current file to front of agenda</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ]</code></td>
+<td class="org-left">remove current file from your agenda</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-'</code></td>
+<td class="org-left">cycle through agenda file list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x &lt;/&gt;</code></td>
+<td class="org-left">set/remove restriction lock</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a a</code></td>
+<td class="org-left">compile agenda for the current week</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a t</code></td>
+<td class="org-left">compile global TODO list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a T</code></td>
+<td class="org-left">compile TODO list for specific keyword</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a m</code></td>
+<td class="org-left">match tags, TODO kwds, properties</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a M</code></td>
+<td class="org-left">match only in TODO entries</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a #</code></td>
+<td class="org-left">find stuck projects</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a L</code></td>
+<td class="org-left">show timeline of current org file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a C</code></td>
+<td class="org-left">configure custom commands</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">agenda for date at cursor</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-org49491c4" class="outline-3">
+<h3 id="org49491c4">Commands available in an agenda buffer</h3>
+<div class="outline-text-3" id="text-org49491c4">
+</div>
+<div id="outline-container-orge5cc817" class="outline-4">
+<h4 id="orge5cc817">View Org file</h4>
+<div class="outline-text-4" id="text-orge5cc817">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>SPC/mouse-3</code></td>
+<td class="org-left">show original location of item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>L</code></td>
+<td class="org-left">show and recenter window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB/mouse-2</code></td>
+<td class="org-left">goto original location in other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>RET</code></td>
+<td class="org-left">goto original location, delete other windows</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x b</code></td>
+<td class="org-left">show subtree in indirect buffer, ded.\ frame</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>F</code></td>
+<td class="org-left">toggle follow-mode</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf24df41" class="outline-4">
+<h4 id="orgf24df41">Change display</h4>
+<div class="outline-text-4" id="text-orgf24df41">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>o</code></td>
+<td class="org-left">delete other windows</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v</code></td>
+<td class="org-left">view mode dispatcher</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>d w vm vy vSP</code></td>
+<td class="org-left">switch to day/week/month/year/def view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>D / G / K</code></td>
+<td class="org-left">toggle diary entries / time grid / habits</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>E / R</code></td>
+<td class="org-left">toggle entry text / clock report</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>l / v l/L/c</code></td>
+<td class="org-left">toggle display of logbook entries</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v a/A</code></td>
+<td class="org-left">toggle inclusion of archived trees/files</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>r / g</code></td>
+<td class="org-left">refresh agenda buffer with any changes</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>/</code></td>
+<td class="org-left">filter with respect to a tag</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>s</code></td>
+<td class="org-left">save all org-mode buffers</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>f / b</code></td>
+<td class="org-left">display next/previous day,week,&#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>. / j</code></td>
+<td class="org-left">goto today / some date (prompt)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org850364f" class="outline-4">
+<h4 id="org850364f">Remote editing</h4>
+<div class="outline-text-4" id="text-org850364f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>0-9</code></td>
+<td class="org-left">digit argument</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>t</code></td>
+<td class="org-left">change state of current TODO item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-k</code></td>
+<td class="org-left">kill item and source</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>/ a</code></td>
+<td class="org-left">archive default</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-w</code></td>
+<td class="org-left">refile the subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>: / T</code></td>
+<td class="org-left">set/show tags of current headline</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e</code></td>
+<td class="org-left">set effort property (prefix=nth)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>, / P</code></td>
+<td class="org-left">set / compute priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">raise/lower priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-a</code></td>
+<td class="org-left">run an attachment command</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-s/d</code></td>
+<td class="org-left">schedule/set deadline for this item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-LEFT/RIGHT</code></td>
+<td class="org-left">change timestamp one day earlier/later</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&gt;</code></td>
+<td class="org-left">change timestamp to today</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>i</code></td>
+<td class="org-left">insert new entry into diary</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>I / O / X</code></td>
+<td class="org-left">start/stop/cancel the clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>J</code></td>
+<td class="org-left">jump to running clock entry</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>m / u / B</code></td>
+<td class="org-left">mark / unmark / execute bulk action</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7011c8b" class="outline-4">
+<h4 id="org7011c8b">Misc</h4>
+<div class="outline-text-4" id="text-org7011c8b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">follow one or offer all links in current entry</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgcbbf549" class="outline-4">
+<h4 id="orgcbbf549">Calendar commands</h4>
+<div class="outline-text-4" id="text-orgcbbf549">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>c</code></td>
+<td class="org-left">find agenda cursor date in calendar</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>c</code></td>
+<td class="org-left">compute agenda for calendar cursor date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M</code></td>
+<td class="org-left">show phases of the moon</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S</code></td>
+<td class="org-left">show sunrise/sunset times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>H</code></td>
+<td class="org-left">show holidays</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C</code></td>
+<td class="org-left">convert date to other calendars</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb2d82be" class="outline-4">
+<h4 id="orgb2d82be">Quit and Exit</h4>
+<div class="outline-text-4" id="text-orgb2d82be">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>q</code></td>
+<td class="org-left">quit agenda, remove agenda buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>x</code></td>
+<td class="org-left">exit agenda, remove all agenda buffers</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd54a09e" class="outline-2">
+<h2 id="orgd54a09e">LaTeX and cdlatex-mode</h2>
+<div class="outline-text-2" id="text-orgd54a09e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-l</code></td>
+<td class="org-left">preview LaTeX fragment</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">expand abbreviation (cdlatex-mode)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>` / '</code></td>
+<td class="org-left">insert/modify math symbol (cdlatex-mode)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x [</code></td>
+<td class="org-left">insert citation using RefTeX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org32ab37a" class="outline-2">
+<h2 id="org32ab37a">Exporting and Publishing</h2>
+<div class="outline-text-2" id="text-org32ab37a">
 <p>
-Have fun!
+Exporting creates files with extensions .txt and .html in the current
+directory. Publishing puts the resulting file into some other place.
 </p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-e</code></td>
+<td class="org-left">export/publish dispatcher</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-e v</code></td>
+<td class="org-left">export visible part only</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-e t</code></td>
+<td class="org-left">insert template of export options</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c :</code></td>
+<td class="org-left">toggle fixed width for entry or region</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x {\tt\char`\}</code></td>
+<td class="org-left">toggle pretty display of scripts, entities</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgea2ab8e"></a>Comments: Text not being exported<br />
+<div class="outline-text-5" id="text-orgea2ab8e">
+<p>
+Lines starting with # and subtrees starting with <code>COMMENT</code> are never
+exported.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c ;</code></td>
+<td class="org-left">toggle COMMENT keyword on entry</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org8686192" class="outline-2">
+<h2 id="org8686192">Dynamic Blocks</h2>
+<div class="outline-text-2" id="text-org8686192">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-u</code></td>
+<td class="org-left">update dynamic block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-x C-u</code></td>
+<td class="org-left">update all dynamic blocks</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
-You may customize the file suffix for exported files like this:
-<code>M-x customize RET org-export-html-extension</code>.
-</p></div></div>
-
-<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
-&#x2026;by typing <code>M-x iimage-mode RET</code>. iimage-mode even shows *.svg images, if
-<code>librsvg</code> was present on compile time. FIXME: is this true for emacs22 ?
-</p></div></div>
-
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
-All components of <code>org-publish-projects-alist</code> are documented in the Org Mode
-Manual.
-</p></div></div>
-
-<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
-Files may be copied from arbitrary src directories to any target directory
-desired.
-</p></div></div>
-
-<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
-This is primarily because of the behaviour of servers. When we navigate
-to <a href="https://orgmode.org/worg/">https://orgmode.org/worg/</a> we will face the <code>index.html</code> if present.
-</p></div></div>
-
-
 </div>
-</div></div>
 <div id="postamble" class="status">
-<p class="author">Author: Sebastian Rose</p>
-<p class="date">Created: 2018-03-31 周六 16:13</p>
+<p class="author">Author: Vikas Rawal</p>
+<p class="date">Created: 2018-04-27 周五 14:08</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

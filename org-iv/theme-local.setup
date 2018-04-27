@@ -1,0 +1,4 @@
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="theme/css/stylesheet.css"/>
+#+INFOJS_OPT: toc:t tdepth:1 ltoc:t path:theme/scripts/org-info.js
