@@ -780,7 +780,7 @@ hr{
     left:0;
     width:300px;
     overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-y:hidden;
     height:100%;
     background:#343131;
     z-index:200;
@@ -855,7 +855,7 @@ ul.nav li ul li ul li ul li {
 }
 
 ul.nav li.active > a {
-    border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
+    /* border-bottom:solid 1px #c9c9c9 !important; /\* XXX Restrict it to 2nd level *\/ */
     border-right:solid 1px #c9c9c9 !important;
 }
 
