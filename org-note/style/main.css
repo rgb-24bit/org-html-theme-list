@@ -240,7 +240,7 @@ pre.src-html:before {
 
 table {
   border-collapse: collapse;
-  display: block;
+  display: -webkit-inline-box;
   overflow-x: auto;
 }
 
