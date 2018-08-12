@@ -37,18 +37,12 @@ html {
 }
 
 a {
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
+  color: #00e;
   text-decoration: none;
 }
+
 a:hover {
-  color: #EA4C89;
+  text-decoration: underline;
 }
 
 /*
