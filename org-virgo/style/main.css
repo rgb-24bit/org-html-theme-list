@@ -1,0 +1,452 @@
+/* Import google fonts */
+/* import url(https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif); */
+
+
+/* Site init style of TAOBAO */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+/* body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }  */
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+/* address, cite, dfn, em, var { font-style:normal; }  */
+/* code, kbd, pre, samp { font-family:couriernew, courier, monospace; } small{ font-size:12px; } */
+/* ul, ol { list-style:none; } */
+a { text-decoration:none; }
+/* a:hover { text-decoration:underline; } */
+/* sup { vertical-align:text-top; } */
+/* sub{ vertical-align:text-bottom; } */
+/* legend { color:#000; } */
+/* fieldset, img { border:0; } */
+/* button, input, select, textarea { font-size:100%; } */
+table { border-collapse:collapse; border-spacing:0; }
+
+
+/* Basic Style */
+
+html { font-size: 100px;  }
+
+body {
+  /* Monaco, Consolas, "kaiti",  */
+  /* font-family: "Droid Serif", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", Verdana, sans-serif;   */
+  font-family: Monaco, Consolas, "kaiti";
+  width: 60%;
+  margin: 0 auto;
+  font-size: .16rem;
+  line-height: 1.5;
+}
+
+#content { position: relative; }
+
+/* header line */
+/* i.e. h1 */
+.title {
+  font-size: .32rem;
+  width: 100%;
+  border-bottom: 2px solid #369;
+  border-image: linear-gradient(to right, #147 , #f66) 30 30;
+  padding: .08rem 0;
+  margin: .36rem 0;
+}
+
+a { color: #19f; }
+a:hover { color:#E69; text-shadow: 0px 0px 1px #E69;}
+
+h2, h3, h4, h5, h6 {
+  font-size: .20rem;
+  margin: .16rem 0;
+}
+
+h2 code:last-child, h3 code:last-child,
+h4 code:last-child, h5 code:last-child,
+h6 code:last-child {
+  border-radius: 3px;
+  background: #363;
+  color: #eee;
+  font-size: .12rem;
+  padding: 2px 6px;
+}
+
+h2 { color: #668BB6; }
+h2:before { content: "# "; }
+
+h3 { color: #c396d8; }
+h3:before { content: "## "; }
+
+h4 { color: #6fbfb1; }
+h4:before { content: "### "; }
+
+h5 { color: #e77724; }
+h5:before { content: "#### "; }
+
+
+/* paragrapn */
+p {
+  margin: .16rem 0;
+}
+
+/* img */
+img {
+  max-width: 100%;
+}
+
+/* img caption */
+.figure p:last-child {
+  color: #666;
+  font-size: .14rem;
+  text-align: center;
+  margin: .06rem 0;
+}
+
+
+/* blockquote */
+blockquote {
+  /* background: #eee; */
+  color: #369;
+  border-left: 1px solid #369;
+  padding-left: .16rem;
+}
+
+
+/* code */
+
+code {
+  color: #135;
+  /* font-family: "Droid Sans Mono"; */
+  font-family: Monaco, Consolas, 'monospace', "kaiti";
+  font-size: 0.14rem;
+}
+
+pre {
+  /* font-family: "Droid Sans Mono"; */
+  font-family: Monaco, Consolas, 'monospace', "kaiti";
+  color: #135;
+  font-size: 0.14rem;
+  padding: .14rem;
+  border: 2px solid #eee;
+  margin: .16rem 0;
+
+  overflow: hidden;
+}
+
+pre:hover {
+  overflow: auto;
+}
+
+
+/* list */
+ul, ol { list-style-position: inside; }
+
+li > ul, li > ol {
+  padding-left: .16rem;
+}
+
+
+/* table */
+.t-above {
+  font-size: .14rem;
+  color: #666;
+  margin: .06rem 0;
+}
+
+table {
+  margin: .24rem 0;
+}
+
+thead tr {
+  border-top: 2px solid #369;
+}
+
+tbody {
+  border-top: 2px solid #369;
+}
+
+tbody tr {
+  border-bottom: 1px solid #369;
+}
+
+tbody tr:last-child {
+  border-bottom: 2px solid #369;
+}
+
+th, td {
+  border-right: 1px solid #369;
+  padding: 3px 6px;
+}
+
+.org-center {
+  text-align: center;
+}
+
+.org-right {
+  text-align: right;
+}
+
+th:first-child, td:first-child {
+  border-left:  rgba(255, 255, 255, 0);
+}
+
+th:last-child, td:last-child {
+  border-right: rgba(255, 255, 255, 0);
+}
+
+
+/* directory */
+#table-of-contents {
+  position: fixed;
+  box-shadow: 1px 0 3px #999;
+
+  left: -16%;
+  top: 0;
+  min-width: 16%;
+  min-height: 100%;
+  height: 100%;
+  font-size: .16rem;
+  font-size: 90%;
+  color: #369;
+  padding: 0 1%;
+  transition: .3s all ease-in-out;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#table-of-contents a { text-decoration: none; }
+
+#table-of-contents:hover {
+  opacity: 1;
+  left: 0;
+  border-right: 1px solid #eee;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+#table-of-contents h2:before { content: ""; }
+
+
+/* Highlight TOC active item */
+.link-active {
+  color: #fff;
+  background: #19f;
+  padding: 1px 2px;
+}
+
+
+/* #postamble, .status */
+.status {
+  color: #666;
+  border-top: 2px solid #369;
+  border-image: linear-gradient(to right, #f66 , #147) 30 30;
+  margin: .62rem 0 .2rem 0;
+  padding-top: .2rem;
+}
+
+.status p {
+  margin: 0;
+}
+
+.status p:last-child {
+  margin-top: .36rem;
+  text-align: center;
+  color: #369;
+
+}
+
+.validation a {
+  color: #19f;
+}
+
+
+
+/* Inline Format */
+
+.underline {
+  border-bottom: 1px solid #333;
+}
+
+
+/* Contect with Me */
+.me {
+  margin-top: .48rem;
+}
+
+.me span {
+  color: #333;
+}
+
+.contect {
+  padding: .16rem 0;
+}
+
+.contect i {
+  color: #369;
+  font-size: .20rem;
+  padding-right: .08rem;
+}
+
+
+/* Top Buttom */
+.top-btn {
+  /* background: #eee; */
+  opacity: .3;
+  box-shadow: 0 0 1px #666;
+  display: inline-block;
+  width: .64rem;
+  height: .32rem;
+  line-height: .32rem;
+  text-align: center;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  font-size: .12rem;
+  color: #222;
+  background: #eee;
+  transition: .3s all ease-in-out;
+}
+
+.top-btn:hover {
+  opacity: 1;
+  background:#eee;
+}
+
+
+/* Nav Button */
+.nav-btn {
+  /* background: #eee; */
+  opacity: .3;
+  box-shadow: 0 0 1px #666;
+  display: inline-block;
+  width: .64rem;
+  height: .32rem;
+  line-height: .32rem;
+  text-align: center;
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  font-size: .12rem;
+  color: #222;
+  background: #eee;
+  transition: .3s all ease-in-out;
+}
+
+.nav-btn:hover {
+  opacity: 1;
+  background:#eee;
+}
+
+
+.nav-show-hide {
+  background: #eee;
+  opacity: 1;
+}
+
+
+
+/* GTD Style */
+.todo {
+  border-radius: 3px;
+  background: #911;
+  color: #eee;
+  font-size: .12rem;
+  padding: 2px 6px;
+}
+
+.done {
+  border-radius: 3px;
+  background: #147;
+  color: #eee;
+  font-size: .12rem;
+  padding: 2px 6px;
+}
+
+.tag span {
+  border-radius: 3px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #c60;
+  color: #eee;
+  font-size: .12rem;
+  padding: 2px 6px;
+  display: inline-block;
+}
+
+.priority {
+  border-radius: 3px;
+  background: #991;
+  color: #eee;
+  font-size: .12rem;
+  padding: 2px 6px;
+}
+
+/* .timestamp-wrapper */
+/* In CSS&CSS3, there has no a selector to get parentNode. Now via js. */
+
+.org-ul .on code {
+  color: #009;
+  font-weight: 900;
+}
+
+.org-ul .off code {
+  color: #900;
+  font-weight: 900;
+}
+
+/* Footnotes */
+
+.footpara {
+  display: inline;
+  font-size: .14rem;
+  color: #333;
+}
+
+
+/* Mobile UI */
+@media screen and (max-width: 1026px) {
+
+  body { width: 96%; }
+
+  .title {
+    font-size: .28rem;
+    white-space: nowrap;
+    overflow: auto;
+  }
+
+  #table-of-contents {
+    height: 400px;
+    min-height: 400px;
+    width: 100%;
+    top: -380px;
+    left: 0;
+    color: #369;
+    opacity: 0;
+    box-shadow: 0 1px 3px #999;
+    background: #fff;
+  }
+
+  #table-of-contents:hover { top: 0px; opacity: 1; }
+
+  .link-active {
+    color: #fff;
+    background: #19f;
+    padding: 1px 2px;
+  }
+
+  pre { overflow: auto; }
+
+  .top-btn {
+    opacity: .1;
+    bottom: 1%;
+    right: 0;
+  }
+
+  .top-btn:hover {
+    opacity: .1;
+  }
+
+  .nav-btn {
+    opacity: .1;
+    bottom: 7%;
+    right: 0;
+  }
+
+  .nav-btn:hover {
+    opacity: .1;
+  }
+}

@@ -1,0 +1,2254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-18 周三 16:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Org-Mode Reference Card</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Vikas Rawal" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style/main.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Org-Mode Reference Card</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org95be599">Getting Started</a></li>
+<li><a href="#org5b467b7">Visibility Cycling</a></li>
+<li><a href="#orga3f5989">Motion</a></li>
+<li><a href="#org82ae36a">Structure Editing</a></li>
+<li><a href="#org2eba2a3">Capture - Refile - Archiving</a></li>
+<li><a href="#org969edfd">Filtering and Sparse Trees</a></li>
+<li><a href="#orgc870fc9">Tables</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org2ed5073">Creating a table</a></li>
+</ul>
+</li>
+<li><a href="#orge78a45d">Commands available inside tables</a>
+<ul>
+<li><a href="#orgdccc9ec">Re-aligning and field motion</a></li>
+<li><a href="#orgae10eaf">Row and column editing</a></li>
+<li><a href="#org504230a">Regions</a></li>
+<li><a href="#org26c8b6f">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#org3998f73">Tables created with the table.el package</a></li>
+<li><a href="#org862d6ba">Spreadsheet</a></li>
+<li><a href="#org402f713">Formula Editor</a></li>
+</ul>
+</li>
+<li><a href="#org4de05fd">Links</a></li>
+<li><a href="#orge7e6d8f">Working with Code (Babel)</a></li>
+<li><a href="#org2c03c63">Completion</a></li>
+<li><a href="#orgabaed70"><span class="todo TODO">TODO</span> Items and Checkboxes</a></li>
+<li><a href="#org867af35">Tags</a></li>
+<li><a href="#org4a6fb15">Properties and Column View</a></li>
+<li><a href="#org0f6d4b7">Timestamps</a>
+<ul>
+<li><a href="#orgb1d056e">Clocking time</a></li>
+</ul>
+</li>
+<li><a href="#orgb0409c5">Agenda Views</a>
+<ul>
+<li><a href="#orgc6347f5">Commands available in an agenda buffer</a>
+<ul>
+<li><a href="#org798cdc6">View Org file</a></li>
+<li><a href="#orgabb2461">Change display</a></li>
+<li><a href="#org8876567">Remote editing</a></li>
+<li><a href="#orgcd209f3">Misc</a></li>
+<li><a href="#org0e1847f">Calendar commands</a></li>
+<li><a href="#orgf17849a">Quit and Exit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7f57ea2">LaTeX and cdlatex-mode</a></li>
+<li><a href="#org12e4cb6">Exporting and Publishing</a></li>
+<li><a href="#org3d2ca7a">Dynamic Blocks</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95be599" class="outline-2">
+<h2 id="org95be599">Getting Started</h2>
+<div class="outline-text-2" id="text-org95be599">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-x org-info</code></td>
+<td class="org-left">To read the on-line documentation try</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org5b467b7" class="outline-2">
+<h2 id="org5b467b7">Visibility Cycling</h2>
+<div class="outline-text-2" id="text-org5b467b7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">rotate current subtree between states</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-TAB</code></td>
+<td class="org-left">rotate entire buffer between states</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-u TAB</code></td>
+<td class="org-left">restore property-dependent startup visibility</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-u C-u TAB</code></td>
+<td class="org-left">show the whole file, including drawers</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-r</code></td>
+<td class="org-left">reveal context around point</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orga3f5989" class="outline-2">
+<h2 id="orga3f5989">Motion</h2>
+<div class="outline-text-2" id="text-orga3f5989">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-n/p</code></td>
+<td class="org-left">next/previous heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-f/b</code></td>
+<td class="org-left">next/previous heading, same level</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-u</code></td>
+<td class="org-left">backward to higher level heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-j</code></td>
+<td class="org-left">jump to another place in document</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">previous/next plain list item</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org82ae36a" class="outline-2">
+<h2 id="org82ae36a">Structure Editing</h2>
+<div class="outline-text-2" id="text-org82ae36a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-RET</code></td>
+<td class="org-left">insert new heading/item at current level</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-RET</code></td>
+<td class="org-left">insert new heading after subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-RET</code></td>
+<td class="org-left">insert new TODO entry/checkbox item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-S-RET</code></td>
+<td class="org-left">insert TODO entry/ckbx after subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c -</code></td>
+<td class="org-left">turn (head)line into item, cycle item type</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c *</code></td>
+<td class="org-left">turn item/line into headline</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-LEFT/RIGHT</code></td>
+<td class="org-left">promote/demote heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-LEFT/RIGHT</code></td>
+<td class="org-left">promote/demote current subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-UP/DOWN</code></td>
+<td class="org-left">move subtree/list item up/down</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ^</code></td>
+<td class="org-left">sort subtree/region/plain-list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x c</code></td>
+<td class="org-left">clone a subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x v</code></td>
+<td class="org-left">copy visible text</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-w/M-w</code></td>
+<td class="org-left">kill/copy subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-y or C-y</code></td>
+<td class="org-left">yank subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x n s/w</code></td>
+<td class="org-left">narrow buffer to subtree / widen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2eba2a3" class="outline-2">
+<h2 id="org2eba2a3">Capture - Refile - Archiving</h2>
+<div class="outline-text-2" id="text-org2eba2a3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c c</code></td>
+<td class="org-left">capture a new item (C-u C-u = goto last)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-w</code></td>
+<td class="org-left">refile subtree (C-u C-u = goto last)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-a</code></td>
+<td class="org-left">archive subtree using the default command</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-s</code></td>
+<td class="org-left">move subtree to archive file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x a/A</code></td>
+<td class="org-left">toggle ARCHIVE tag / to ARCHIVE sibling</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-TAB</code></td>
+<td class="org-left">force cycling of an ARCHIVEd tree</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org969edfd" class="outline-2">
+<h2 id="org969edfd">Filtering and Sparse Trees</h2>
+<div class="outline-text-2" id="text-org969edfd">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c /</code></td>
+<td class="org-left">construct a sparse tree by various criteria</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c / t/T</code></td>
+<td class="org-left">view TODO's in sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a t</code></td>
+<td class="org-left">global TODO list in agenda mode</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a L</code></td>
+<td class="org-left">time sorted view of current org file</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc870fc9" class="outline-2">
+<h2 id="orgc870fc9">Tables</h2>
+<div class="outline-text-2" id="text-orgc870fc9">
+</div>
+<div id="outline-container-org2ed5073" class="outline-4">
+<h4 id="org2ed5073">Creating a table</h4>
+<div class="outline-text-4" id="text-org2ed5073">
+<ul class="org-ul">
+<li><code>C-c |</code>: convert region to table</li>
+<li><code>C-3 C-c |</code> : separator at least 3 spaces</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge78a45d" class="outline-3">
+<h3 id="orge78a45d">Commands available inside tables</h3>
+<div class="outline-text-3" id="text-orge78a45d">
+<p>
+The following commands work when the cursor is inside a table.  Outside of
+tables, the same keys may have other functionality.
+</p>
+</div>
+
+<div id="outline-container-orgdccc9ec" class="outline-4">
+<h4 id="orgdccc9ec">Re-aligning and field motion</h4>
+<div class="outline-text-4" id="text-orgdccc9ec">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">re-align the table without moving the cursor</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">re-align the table, move to next field</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-TAB</code></td>
+<td class="org-left">move to previous field</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>RET</code></td>
+<td class="org-left">re-align the table, move to next row</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-a/e</code></td>
+<td class="org-left">move to beginning/end of field</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgae10eaf" class="outline-4">
+<h4 id="orgae10eaf">Row and column editing</h4>
+<div class="outline-text-4" id="text-orgae10eaf">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-LEFT/RIGHT</code></td>
+<td class="org-left">move the current column left</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-LEFT</code></td>
+<td class="org-left">kill the current column</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-RIGHT</code></td>
+<td class="org-left">insert new column to left of cursor position</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-UP/DOWN</code></td>
+<td class="org-left">move the current row up/down</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-UP</code></td>
+<td class="org-left">kill the current row or horizontal line</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-DOWN</code></td>
+<td class="org-left">insert new row above the current row</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c -</code></td>
+<td class="org-left">insert hline below (C-u : above) current row</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c RET</code></td>
+<td class="org-left">insert hline and move to line below it</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ^</code></td>
+<td class="org-left">sort lines in region</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org504230a" class="outline-4">
+<h4 id="org504230a">Regions</h4>
+<div class="outline-text-4" id="text-org504230a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-w/M-w/C-y</code></td>
+<td class="org-left">cut/copy/paste rectangular region</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">fill paragraph across selected cells</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org26c8b6f" class="outline-4">
+<h4 id="org26c8b6f">Miscellaneous</h4>
+<div class="outline-text-4" id="text-org26c8b6f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c `</code></td>
+<td class="org-left">edit the current field in a separate window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u TAB</code></td>
+<td class="org-left">make current field fully visible</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-x org-table-export</code></td>
+<td class="org-left">export as tab-separated file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-x org-table-import</code></td>
+<td class="org-left">import tab-separated file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c +</code></td>
+<td class="org-left">sum numbers in current column/rectangle</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+To limit column width to N characters, use <code>... | &lt;N&gt; | ...</code>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3998f73" class="outline-3">
+<h3 id="org3998f73">Tables created with the table.el package</h3>
+<div class="outline-text-3" id="text-org3998f73">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c ~</code></td>
+<td class="org-left">insert a new table.el table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">recognize existing table.el table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ~</code></td>
+<td class="org-left">convert table (Org-mode &lt;-&gt; table.el)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org862d6ba" class="outline-3">
+<h3 id="org862d6ba">Spreadsheet</h3>
+<div class="outline-text-3" id="text-org862d6ba">
+<ul class="org-ul">
+<li>Formulas typed in field are executed by <code>TAB</code>, <code>RET</code> and <code>C-c C-c</code>.</li>
+<li><code>=</code> introduces a column formula, <code>:=</code> a field formula.</li>
+<li>Example: Add Col1 and Col2: <code>=1+2</code></li>
+<li>&#x2026; with printf format specification: <code>=1+2;%.2f</code></li>
+<li>&#x2026; with constants from constants.el: <code>=1/c/cm</code></li>
+<li>sum from 2nd to 3rd hline: <code>:=vsum(@II..@III)</code></li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>=</code></td>
+<td class="org-left">apply current column formula</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c =</code></td>
+<td class="org-left">set and eval column formula</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c #</code></td>
+<td class="org-left">set and eval field formula</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c *</code></td>
+<td class="org-left">re-apply all stored equations to current line</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c *</code></td>
+<td class="org-left">re-apply all stored equations to entire table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-u C-c *</code></td>
+<td class="org-left">iterate table to stability</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-#</code></td>
+<td class="org-left">rotate calculation mark through # * ! ^ _</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ?</code></td>
+<td class="org-left">show line, column, formula reference</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c }/{</code></td>
+<td class="org-left">toggle grid / debugger</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org402f713" class="outline-3">
+<h3 id="org402f713">Formula Editor</h3>
+<div class="outline-text-3" id="text-org402f713">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c '</code></td>
+<td class="org-left">edit formulas in separate buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">exit and install new formulas</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-c</code></td>
+<td class="org-left">exit, install, and apply new formulas</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">abort</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-r</code></td>
+<td class="org-left">toggle reference style</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">pretty-print Lisp formula</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-TAB</code></td>
+<td class="org-left">complete Lisp symbol</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-cursor</code></td>
+<td class="org-left">shift reference point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-up/down</code></td>
+<td class="org-left">shift test line for column references</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-up/down</code></td>
+<td class="org-left">scroll the window showing the table</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c }</code></td>
+<td class="org-left">toggle table coordinate grid</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4de05fd" class="outline-2">
+<h2 id="org4de05fd">Links</h2>
+<div class="outline-text-2" id="text-org4de05fd">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c l</code></td>
+<td class="org-left">globally store link to the current location</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-l</code></td>
+<td class="org-left">insert a link (TAB completes stored links)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-l</code></td>
+<td class="org-left">insert file link with file name completion</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-l</code></td>
+<td class="org-left">edit (also hidden part of) link at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">open file links in emacs</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-o</code></td>
+<td class="org-left">&#x2026;force open in emacs/other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-1/2</code></td>
+<td class="org-left">open link at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-3</code></td>
+<td class="org-left">&#x2026;force open in emacs/other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c %</code></td>
+<td class="org-left">record a position in mark ring</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &amp;</code></td>
+<td class="org-left">jump back to last followed link(s)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-n</code></td>
+<td class="org-left">find next link</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-p</code></td>
+<td class="org-left">find previous link</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c '</code></td>
+<td class="org-left">edit code snippet of file at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-v</code></td>
+<td class="org-left">toggle inline display of linked images</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orge7e6d8f" class="outline-2">
+<h2 id="orge7e6d8f">Working with Code (Babel)</h2>
+<div class="outline-text-2" id="text-orge7e6d8f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">execute code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">open results of code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v c</code></td>
+<td class="org-left">check code block at point for errors</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v j</code></td>
+<td class="org-left">insert a header argument with completion</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v v</code></td>
+<td class="org-left">view expanded body of code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v I</code></td>
+<td class="org-left">view information about code block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v g</code></td>
+<td class="org-left">go to named code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v r</code></td>
+<td class="org-left">go to named result</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v u</code></td>
+<td class="org-left">go to the head of the current code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v n</code></td>
+<td class="org-left">go to the next code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v p</code></td>
+<td class="org-left">go to the previous code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v d</code></td>
+<td class="org-left">demarcate a code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v x</code></td>
+<td class="org-left">execute the next key sequence in the code edit bu</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v b</code></td>
+<td class="org-left">execute all code blocks in current buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v s</code></td>
+<td class="org-left">execute all code blocks in current subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v t</code></td>
+<td class="org-left">tangle code blocks in current file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v f</code></td>
+<td class="org-left">tangle code blocks in supplied file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v i</code></td>
+<td class="org-left">ingest all code blocks in supplied file into the</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v z</code></td>
+<td class="org-left">switch to the session of the current code block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v l</code></td>
+<td class="org-left">load the current code block into a session</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v a</code></td>
+<td class="org-left">view sha1 hash of the current code block</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2c03c63" class="outline-2">
+<h2 id="org2c03c63">Completion</h2>
+<div class="outline-text-2" id="text-org2c03c63">
+<p>
+In-buffer completion completes TODO keywords at headline start, TeX macros
+after `\', option keywords after `#-', TAGS after `:', and dictionary words
+elsewhere.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>M-TAB</code></td>
+<td class="org-left">complete word at point</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgabaed70" class="outline-2">
+<h2 id="orgabaed70"><span class="todo TODO">TODO</span> Items and Checkboxes</h2>
+<div class="outline-text-2" id="text-orgabaed70">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-t</code></td>
+<td class="org-left">rotate the state of the current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-LEFT/RIGHT</code></td>
+<td class="org-left">select next/previous state</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-S-LEFT/RIGHT</code></td>
+<td class="org-left">select next/previous set</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x o</code></td>
+<td class="org-left">toggle ORDERED property</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-v</code></td>
+<td class="org-left">view TODO items in a sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-3 C-c C-v</code></td>
+<td class="org-left">view 3rd TODO keyword's sparse tree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c , [ABC]</code></td>
+<td class="org-left">set the priority of the current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c , SPC</code></td>
+<td class="org-left">remove priority cookie from current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">raise/lower priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-RET</code></td>
+<td class="org-left">insert new checkbox item in plain list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-b</code></td>
+<td class="org-left">toggle checkbox(es) in region/entry/at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">toggle checkbox at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c #</code></td>
+<td class="org-left">update checkbox statistics (C-u : whole file)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org867af35" class="outline-2">
+<h2 id="org867af35">Tags</h2>
+<div class="outline-text-2" id="text-org867af35">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-q</code></td>
+<td class="org-left">set tags for current heading</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-q</code></td>
+<td class="org-left">realign tags in all headings</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c \\</code></td>
+<td class="org-left">create sparse tree with matching tags</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">globally (agenda) match tags at cursor</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org4a6fb15" class="outline-2">
+<h2 id="org4a6fb15">Properties and Column View</h2>
+<div class="outline-text-2" id="text-org4a6fb15">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x p/e</code></td>
+<td class="org-left">set property/effort</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">special commands in property lines</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-left/right</code></td>
+<td class="org-left">next/previous allowed value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-c</code></td>
+<td class="org-left">turn on column view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x i</code></td>
+<td class="org-left">capture columns view in dynamic block</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>q</code></td>
+<td class="org-left">quit column view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v</code></td>
+<td class="org-left">show full value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e</code></td>
+<td class="org-left">edit value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>n/p</code> or <code>S-left/right</code></td>
+<td class="org-left">next/previous allowed value</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a</code></td>
+<td class="org-left">edit allowed values list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&gt; / &lt;</code></td>
+<td class="org-left">make column wider/narrower</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-left/right</code></td>
+<td class="org-left">move column left/right</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-right</code></td>
+<td class="org-left">add new column</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-S-left</code></td>
+<td class="org-left">Delete current column</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org0f6d4b7" class="outline-2">
+<h2 id="org0f6d4b7">Timestamps</h2>
+<div class="outline-text-2" id="text-org0f6d4b7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c .</code></td>
+<td class="org-left">prompt for date and insert timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c .</code></td>
+<td class="org-left">like C-c . but insert date and time format</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c !</code></td>
+<td class="org-left">like C-c . but make stamp inactive</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-d</code></td>
+<td class="org-left">insert DEADLINE timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-s</code></td>
+<td class="org-left">insert SCHEDULED timestamp</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c / d</code></td>
+<td class="org-left">create sparse tree with all deadlines due</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-y</code></td>
+<td class="org-left">the time between 2 dates in a time range</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-RIGHT/LEFT</code></td>
+<td class="org-left">change timestamp at cursor ±1 day</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">change year/month/day at cursor by ±1</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &gt;</code></td>
+<td class="org-left">access the calendar for the current date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c &lt;</code></td>
+<td class="org-left">insert timestamp matching date in calendar</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">access agenda for current date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>mouse-1/RET</code></td>
+<td class="org-left">select date while prompted</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-t</code></td>
+<td class="org-left">toggle custom format display for dates/times</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgb1d056e" class="outline-3">
+<h3 id="orgb1d056e">Clocking time</h3>
+<div class="outline-text-3" id="text-orgb1d056e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-i</code></td>
+<td class="org-left">start clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-o/x</code></td>
+<td class="org-left">stop/cancel clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-d</code></td>
+<td class="org-left">display total subtree times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-c</code></td>
+<td class="org-left">remove displayed times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x C-r</code></td>
+<td class="org-left">insert/update table with clock report</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb0409c5" class="outline-2">
+<h2 id="orgb0409c5">Agenda Views</h2>
+<div class="outline-text-2" id="text-orgb0409c5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c [</code></td>
+<td class="org-left">add/move current file to front of agenda</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c ]</code></td>
+<td class="org-left">remove current file from your agenda</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-'</code></td>
+<td class="org-left">cycle through agenda file list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x &lt;/&gt;</code></td>
+<td class="org-left">set/remove restriction lock</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a a</code></td>
+<td class="org-left">compile agenda for the current week</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a t</code></td>
+<td class="org-left">compile global TODO list</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a T</code></td>
+<td class="org-left">compile TODO list for specific keyword</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a m</code></td>
+<td class="org-left">match tags, TODO kwds, properties</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a M</code></td>
+<td class="org-left">match only in TODO entries</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a #</code></td>
+<td class="org-left">find stuck projects</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a L</code></td>
+<td class="org-left">show timeline of current org file</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c a C</code></td>
+<td class="org-left">configure custom commands</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">agenda for date at cursor</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgc6347f5" class="outline-3">
+<h3 id="orgc6347f5">Commands available in an agenda buffer</h3>
+<div class="outline-text-3" id="text-orgc6347f5">
+</div>
+<div id="outline-container-org798cdc6" class="outline-4">
+<h4 id="org798cdc6">View Org file</h4>
+<div class="outline-text-4" id="text-org798cdc6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>SPC/mouse-3</code></td>
+<td class="org-left">show original location of item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>L</code></td>
+<td class="org-left">show and recenter window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB/mouse-2</code></td>
+<td class="org-left">goto original location in other window</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>RET</code></td>
+<td class="org-left">goto original location, delete other windows</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x b</code></td>
+<td class="org-left">show subtree in indirect buffer, ded.\ frame</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>F</code></td>
+<td class="org-left">toggle follow-mode</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgabb2461" class="outline-4">
+<h4 id="orgabb2461">Change display</h4>
+<div class="outline-text-4" id="text-orgabb2461">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>o</code></td>
+<td class="org-left">delete other windows</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v</code></td>
+<td class="org-left">view mode dispatcher</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>d w vm vy vSP</code></td>
+<td class="org-left">switch to day/week/month/year/def view</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>D / G / K</code></td>
+<td class="org-left">toggle diary entries / time grid / habits</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>E / R</code></td>
+<td class="org-left">toggle entry text / clock report</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>l / v l/L/c</code></td>
+<td class="org-left">toggle display of logbook entries</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>v a/A</code></td>
+<td class="org-left">toggle inclusion of archived trees/files</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>r / g</code></td>
+<td class="org-left">refresh agenda buffer with any changes</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>/</code></td>
+<td class="org-left">filter with respect to a tag</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>s</code></td>
+<td class="org-left">save all org-mode buffers</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>f / b</code></td>
+<td class="org-left">display next/previous day,week,&#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>. / j</code></td>
+<td class="org-left">goto today / some date (prompt)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8876567" class="outline-4">
+<h4 id="org8876567">Remote editing</h4>
+<div class="outline-text-4" id="text-org8876567">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>0-9</code></td>
+<td class="org-left">digit argument</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>t</code></td>
+<td class="org-left">change state of current TODO item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-k</code></td>
+<td class="org-left">kill item and source</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>/ a</code></td>
+<td class="org-left">archive default</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-w</code></td>
+<td class="org-left">refile the subtree</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>: / T</code></td>
+<td class="org-left">set/show tags of current headline</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e</code></td>
+<td class="org-left">set effort property (prefix=nth)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>, / P</code></td>
+<td class="org-left">set / compute priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-UP/DOWN</code></td>
+<td class="org-left">raise/lower priority of current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-a</code></td>
+<td class="org-left">run an attachment command</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-s/d</code></td>
+<td class="org-left">schedule/set deadline for this item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S-LEFT/RIGHT</code></td>
+<td class="org-left">change timestamp one day earlier/later</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&gt;</code></td>
+<td class="org-left">change timestamp to today</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>i</code></td>
+<td class="org-left">insert new entry into diary</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>I / O / X</code></td>
+<td class="org-left">start/stop/cancel the clock on current item</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>J</code></td>
+<td class="org-left">jump to running clock entry</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>m / u / B</code></td>
+<td class="org-left">mark / unmark / execute bulk action</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgcd209f3" class="outline-4">
+<h4 id="orgcd209f3">Misc</h4>
+<div class="outline-text-4" id="text-orgcd209f3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-o</code></td>
+<td class="org-left">follow one or offer all links in current entry</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org0e1847f" class="outline-4">
+<h4 id="org0e1847f">Calendar commands</h4>
+<div class="outline-text-4" id="text-org0e1847f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>c</code></td>
+<td class="org-left">find agenda cursor date in calendar</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>c</code></td>
+<td class="org-left">compute agenda for calendar cursor date</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M</code></td>
+<td class="org-left">show phases of the moon</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>S</code></td>
+<td class="org-left">show sunrise/sunset times</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>H</code></td>
+<td class="org-left">show holidays</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C</code></td>
+<td class="org-left">convert date to other calendars</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf17849a" class="outline-4">
+<h4 id="orgf17849a">Quit and Exit</h4>
+<div class="outline-text-4" id="text-orgf17849a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>q</code></td>
+<td class="org-left">quit agenda, remove agenda buffer</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>x</code></td>
+<td class="org-left">exit agenda, remove all agenda buffers</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7f57ea2" class="outline-2">
+<h2 id="org7f57ea2">LaTeX and cdlatex-mode</h2>
+<div class="outline-text-2" id="text-org7f57ea2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-l</code></td>
+<td class="org-left">preview LaTeX fragment</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>TAB</code></td>
+<td class="org-left">expand abbreviation (cdlatex-mode)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>` / '</code></td>
+<td class="org-left">insert/modify math symbol (cdlatex-mode)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x [</code></td>
+<td class="org-left">insert citation using RefTeX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org12e4cb6" class="outline-2">
+<h2 id="org12e4cb6">Exporting and Publishing</h2>
+<div class="outline-text-2" id="text-org12e4cb6">
+<p>
+Exporting creates files with extensions .txt and .html in the current
+directory. Publishing puts the resulting file into some other place.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-e</code></td>
+<td class="org-left">export/publish dispatcher</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-e v</code></td>
+<td class="org-left">export visible part only</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-e t</code></td>
+<td class="org-left">insert template of export options</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c :</code></td>
+<td class="org-left">toggle fixed width for entry or region</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-c C-x {\tt\char`\}</code></td>
+<td class="org-left">toggle pretty display of scripts, entities</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ul class="org-ul">
+<li><a id="org2199953"></a>Comments: Text not being exported<br />
+<div class="outline-text-5" id="text-org2199953">
+<p>
+Lines starting with # and subtrees starting with <code>COMMENT</code> are never
+exported.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c ;</code></td>
+<td class="org-left">toggle COMMENT keyword on entry</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org3d2ca7a" class="outline-2">
+<h2 id="org3d2ca7a">Dynamic Blocks</h2>
+<div class="outline-text-2" id="text-org3d2ca7a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-c C-x C-u</code></td>
+<td class="org-left">update dynamic block at point</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-u C-c C-x C-u</code></td>
+<td class="org-left">update all dynamic blocks</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Vikas Rawal</p>
+<p class="date">Created: 2020-03-18 周三 16:17</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
